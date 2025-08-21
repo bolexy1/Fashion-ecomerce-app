@@ -51,7 +51,7 @@ class LoginForm extends StatelessWidget {
           const SizedBox(height: TSizes.spaceBtwItems),
       
           // create Account button
-          SizedBox(width:double.infinity, child: ElevatedButton(onPressed: ()=>Get.to(()=> const SingupScreen()), child: const Text(TTexts.createAccount),)),
+          SizedBox(width:double.infinity, child: OutlinedButton(onPressed: ()=>Get.to(()=> const SingupScreen()), child: const Text(TTexts.createAccount),)),
           
         ],
       ),
