@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_utils/get_utils.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:t_store/common/widgets/login/signup/login_divider.dart';
+import 'package:t_store/common/widgets/login/login_divider.dart';
 import 'package:t_store/common/widgets/login/signup/social_buttons.dart';
-import 'package:t_store/common/widgets/signup/widget/signup_form.dart';
+import 'package:t_store/common/widgets/login/signup/signup/widget/signup_form.dart';
 import 'package:t_store/utils/constants/colors.dart';
 import 'package:t_store/utils/constants/sizes.dart';
 import 'package:t_store/utils/constants/text_strings.dart';
@@ -14,7 +14,7 @@ class SingupScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = THelperFunctions.isDarkMode(context);
+    final dark = BHelperFunctions.isDarkMode(context);
     return Scaffold(
       appBar: AppBar(),
       body: SingleChildScrollView(

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:t_store/common/widgets/login/signup/login_divider.dart';
+import 'package:t_store/common/widgets/login/login_divider.dart';
 import 'package:t_store/common/widgets/spacing_styles.dart';
 import 'package:t_store/features/authentication/screens/login/widget/login_header.dart';
 import 'package:t_store/features/authentication/screens/login/widget/loginform.dart';
@@ -17,7 +17,7 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = THelperFunctions.isDarkMode(context);
+    final dark = BHelperFunctions.isDarkMode(context);
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(

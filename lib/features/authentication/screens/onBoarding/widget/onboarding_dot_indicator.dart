@@ -14,9 +14,9 @@ class onBoardingDotNavigation extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final controller = OnboardingController.instance;
-    final dark = THelperFunctions.isDarkMode(context);
+    final dark = BHelperFunctions.isDarkMode(context);
     return Positioned(
-      bottom: TDeviceUtils.getBottomNavigationBarHeight() +25,
+      bottom: BDeviceUtils.getBottomNavigationBarHeight() +25,
       left: TSizes.defaultSpace,
       
       child: SmoothPageIndicator(

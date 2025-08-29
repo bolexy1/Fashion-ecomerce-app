@@ -16,14 +16,13 @@ class OnboardingPage extends StatelessWidget {
       child: Column(
         children: [
           Image(
-            width: THelperFunctions.screenWidth()*0.8,
-            height: THelperFunctions.screenHeight()*0.6,
+            width: BHelperFunctions.screenWidth()*0.8,
+            height: BHelperFunctions.screenHeight()*0.6,
             image: AssetImage(image)),
             Text(title, style: Theme.of(context).textTheme.headlineMedium,textAlign: TextAlign.center,),
               // ignore: prefer_const_constructors
               const SizedBox(height: TSizes.spaceBtwItems),
-            Text(subtitle, style: Theme.of(context).textTheme.bodyMedium,textAlign: TextAlign.center,),
-      
+            Text(subtitle, style: Theme.of(context).textTheme.bodyMedium,textAlign: TextAlign.center,),      
             
         ],
       ),

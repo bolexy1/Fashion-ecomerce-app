@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:t_store/features/shop/screens/home/home.dart';
+import 'package:t_store/features/shop/screens/store/store.dart';
 import 'package:t_store/utils/constants/colors.dart';
 import 'package:t_store/utils/helpers/helper_functions.dart';
 
@@ -11,7 +12,7 @@ class NavigationMenu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final controller = Get.put(NavigationController());
-    final darkmode = THelperFunctions.isDarkMode(context);
+    final darkmode = BHelperFunctions.isDarkMode(context);
     return Scaffold(
       bottomNavigationBar: Obx(
         ()=> NavigationBar(
@@ -39,8 +40,8 @@ class NavigationController extends GetxController {
   final Rx<int> selectedIndex = 0.obs;
 
   final screens = [
-    Home(),
-    Container(),
+    const Home(),
+    const Store(),
     Container(),
     Container(),
 

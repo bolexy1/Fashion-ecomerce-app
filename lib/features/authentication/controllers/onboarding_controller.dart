@@ -7,10 +7,10 @@ class OnboardingController {
 
   // variable
   final pageController = PageController();
-  Rx<int> currentPageIndex = 0.obs;
+  final Rx<int> currentPageIndex = 0.obs;
 
   // update Current Index when Page Scroll
-  void updatePageIndicator(index) => currentPageIndex = index;
+  void updatePageIndicator(index) => currentPageIndex.value = index;
 
   // jump to the specific dot selected page
   void dotNavigationClick(index) {
@@ -20,7 +20,7 @@ class OnboardingController {
 
   // update Current Index & jump to next Page
   void nextPage () {
-    if(currentPageIndex == 2){
+    if(currentPageIndex.value == 2){
      Get.to(LoginScreen());
     }else{
       int page = currentPageIndex.value + 1;

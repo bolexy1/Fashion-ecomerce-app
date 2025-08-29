@@ -8,15 +8,7 @@ import 'package:t_store/utils/theme/theme.dart';
 class App extends StatelessWidget {
   const App({super.key});
 
-  // The URL of your complete product
-  static final Uri _productUri = Uri.parse('https://codingwitht.com/ecommerce-app-with-admin-panel/');
-
-  Future<void> _launchProductLink() async {
-    if (!await launchUrl(_productUri, mode: LaunchMode.externalApplication)) {
-      // handle error, e.g. show snackbar
-      debugPrint('Could not launch $_productUri');
-    }
-  }
+ 
 
   @override
   Widget build(BuildContext context) {

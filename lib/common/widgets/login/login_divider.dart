@@ -14,7 +14,7 @@ class LoginDivider extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-        final dark = THelperFunctions.isDarkMode(context);
+        final dark = BHelperFunctions.isDarkMode(context);
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
