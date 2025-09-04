@@ -3,7 +3,7 @@ import 'package:t_store/utils/constants/colors.dart';
 
 class TCircularContainer extends StatelessWidget {
   const TCircularContainer({
-    super.key, this.width =400, this.height = 400,  this.radius = 400, this.padding = 0, this.child,  this.backgroundColor = TColors.white,  this.margin,  this.borderColor =TColors.borderPrimary,  this.showBorder = false ,
+    super.key, this.width =400, this.height = 400,  this.radius = 400, this.padding = 0, this.child,  this.backgroundColor = BColors.white,  this.margin,  this.borderColor =BColors.borderPrimary,  this.showBorder = false ,
   });
 
   final double ? width;

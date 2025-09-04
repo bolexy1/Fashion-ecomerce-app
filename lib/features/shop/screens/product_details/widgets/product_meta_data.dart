@@ -24,36 +24,36 @@ class BProductMetaData extends StatelessWidget {
           children: [
             // sale tag
             BRoundedContainer(
-                      radius: TSizes.md,
+                      radius: BSizes.md,
                       // ignore: deprecated_member_use
-                      backgroundColor: TColors.secondary.withOpacity(0.8),
-                      padding: const EdgeInsets.symmetric(horizontal: TSizes.sm, vertical:TSizes.xs, ),
-                      child: Text("25%", style: Theme.of(context).textTheme.labelLarge!.apply(color: TColors.black)),
+                      backgroundColor: BColors.secondary.withOpacity(0.8),
+                      padding: const EdgeInsets.symmetric(horizontal: BSizes.sm, vertical:BSizes.xs, ),
+                      child: Text("25%", style: Theme.of(context).textTheme.labelLarge!.apply(color: BColors.black)),
                     ),
-                    const SizedBox(width: TSizes.spaceBtwItems,),
+                    const SizedBox(width: BSizes.spaceBtwItems,),
                     // price
                     Text('\$250', style: Theme.of(context).textTheme.titleSmall!.apply(decoration: TextDecoration.lineThrough),),
-                    const SizedBox(width: TSizes.spaceBtwItems,),
+                    const SizedBox(width: BSizes.spaceBtwItems,),
                    const BProductPriceText(price: '175', isLarge: true,)                            
 
           ],
         ),
-        const SizedBox(height: TSizes.spaceBtwItems/1.5,),
+        const SizedBox(height: BSizes.spaceBtwItems/1.5,),
 
         // Title
         const BProductTitleText(title: 'Green Nike Sport Shirt'),
-        const SizedBox(height: TSizes.spaceBtwItems/1.5,),
+        const SizedBox(height: BSizes.spaceBtwItems/1.5,),
          
         //  stack status
         Row(
           children: [
             const BProductTitleText(title: 'Status'),
-             const SizedBox(width: TSizes.spaceBtwItems/1.5,),
+             const SizedBox(width: BSizes.spaceBtwItems/1.5,),
             Text('In Stock',style: Theme.of(context).textTheme.titleMedium,),
           ],
         ),
         
-        const SizedBox(height: TSizes.spaceBtwItems,),
+        const SizedBox(height: BSizes.spaceBtwItems,),
          
 
         // brand
@@ -63,8 +63,8 @@ class BProductMetaData extends StatelessWidget {
             image: TImages.cosmeticsIcon,
             width: 32,
             height: 32,
-            overlayColor: dark ? TColors.white : TColors.black,),
-           const BBrandTitleText(title:'Nike', brandTextSize: TextSizes.medium, ),
+            overlayColor: dark ? BColors.white : BColors.black,),
+           const BBrandTitleText(title:'Nike', brandTextSize: TexBSizes.medium, ),
          ],
        )
 

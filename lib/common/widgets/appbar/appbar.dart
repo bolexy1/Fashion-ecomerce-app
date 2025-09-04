@@ -19,11 +19,11 @@ class BAppbar extends StatelessWidget implements PreferredSizeWidget{
   Widget build(BuildContext context) {
     final dark =BHelperFunctions.isDarkMode(context);
     return  Padding(
-      padding:const EdgeInsets.symmetric(horizontal: TSizes.md),
+      padding:const EdgeInsets.symmetric(horizontal: BSizes.md),
     child: AppBar(
       automaticallyImplyLeading: false,
       leading:showBackArrow 
-      ? IconButton(onPressed: ()=>Get.back(), icon: const Icon(Iconsax.arrow_left), color: dark ? TColors.white: TColors.dark,)
+      ? IconButton(onPressed: ()=>Get.back(), icon: const Icon(Iconsax.arrow_left), color: dark ? BColors.white: BColors.dark,)
       : leadingIcon != null ?IconButton(onPressed: leadingOnPressed, icon: Icon(leadingIcon)):null,
 
       title: title,

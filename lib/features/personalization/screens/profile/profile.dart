@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
 import 'package:t_store/common/widgets/appbar/appbar.dart';
 import 'package:t_store/common/widgets/images/B_Circular_image.dart';
 import 'package:t_store/common/widgets/text/section_heading.dart';
@@ -20,7 +19,7 @@ class ProfileScreen extends StatelessWidget {
       ),
 
       body: SingleChildScrollView(
-        child: Padding(padding: const EdgeInsets.all(TSizes.defaultSpace),
+        child: Padding(padding: const EdgeInsets.all(BSizes.defaultSpace),
         
         child: Column(
           children: [
@@ -37,24 +36,24 @@ class ProfileScreen extends StatelessWidget {
 
             // details
 
-            const SizedBox(height: TSizes.spaceBtwItems/2,),
+            const SizedBox(height: BSizes.spaceBtwItems/2,),
             const Divider(),
-            const SizedBox(height: TSizes.spaceBtwItems,),
+            const SizedBox(height: BSizes.spaceBtwItems,),
 
            const BSectionHeading(title: 'Profile Information', showActionButton: false,), 
-           const SizedBox(height: TSizes.spaceBtwItems,),
+           const SizedBox(height: BSizes.spaceBtwItems,),
 
            BProfileMenu(onPressed: () {}, title: 'Name', value: 'Promise',),
            BProfileMenu(onPressed: () {}, title: 'Username', value: 'BOlexy',),
 
-           const SizedBox(height: TSizes.spaceBtwItems/2,),
+           const SizedBox(height: BSizes.spaceBtwItems/2,),
             const Divider(),
-            const SizedBox(height: TSizes.spaceBtwItems,),
+            const SizedBox(height: BSizes.spaceBtwItems,),
 
             // heading personal info
 
             const BSectionHeading(title: 'Profile Information', showActionButton: false,), 
-            const SizedBox(height: TSizes.spaceBtwItems,),
+            const SizedBox(height: BSizes.spaceBtwItems,),
 
              BProfileMenu(onPressed: () {}, title: 'User ID', value: '24687',),
            BProfileMenu(onPressed: () {}, title: 'E-mail', value: 'BOlexy',),
@@ -62,7 +61,7 @@ class ProfileScreen extends StatelessWidget {
            BProfileMenu(onPressed: () {}, title: 'Gender', value: 'Male',),
             BProfileMenu(onPressed: () {}, title: 'Date of Birth', value: '__',),
             const Divider(),
-            const SizedBox(height: TSizes.spaceBtwItems,),
+            const SizedBox(height: BSizes.spaceBtwItems,),
 
             Center(
               child: TextButton(onPressed: (){}, 

@@ -35,10 +35,10 @@ class Store extends StatelessWidget {
               automaticallyImplyLeading: false,
               pinned: true,
               floating: true,
-              backgroundColor: BHelperFunctions.isDarkMode(context ) ? TColors.black : TColors.white,
+              backgroundColor: BHelperFunctions.isDarkMode(context ) ? BColors.black : BColors.white,
               expandedHeight: 440 ,
       
-              flexibleSpace: Padding(padding: const EdgeInsets.all(TSizes.defaultSpace),
+              flexibleSpace: Padding(padding: const EdgeInsets.all(BSizes.defaultSpace),
               child: ListView(
                 physics: const NeverScrollableScrollPhysics(),
                 shrinkWrap: true,
@@ -46,13 +46,13 @@ class Store extends StatelessWidget {
       
                   // seaerch bar
       
-                  const SizedBox(height: TSizes.spaceBtwItems,),
+                  const SizedBox(height: BSizes.spaceBtwItems,),
                   const BSearchContainer(text: 'Search in store', showBoarder: true,showBackgrond: false, padding: EdgeInsets.zero,),
-                  const SizedBox(height: TSizes.spaceBtwSections,),
+                  const SizedBox(height: BSizes.spaceBtwSections,),
       
                   // feature brands
                   BSectionHeading(title: "Featured Brands",  onPressed: ()=> Get.to(()=> const AllBrandsScreen()),),
-                  const SizedBox(height: TSizes.spaceBtwItems/1.5,),
+                  const SizedBox(height: BSizes.spaceBtwItems/1.5,),
       
                   BGridLayout(itemCount: 4 ,mainAxisExtent:80 , itemBuilder: (_, index){
                     return const BBrandCard(showBoarder: false,);

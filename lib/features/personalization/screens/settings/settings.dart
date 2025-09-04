@@ -26,13 +26,13 @@ class SettingsScreen extends StatelessWidget {
             BPrimaryHeaderContainer(child: Column(
               children: [
                 BAppbar(
-                  title: Text('Account', style: Theme.of(context).textTheme.headlineMedium!.apply(color: TColors.white),),
+                  title: Text('Account', style: Theme.of(context).textTheme.headlineMedium!.apply(color: BColors.white),),
                 ),
-                const SizedBox(height: TSizes.spaceBtwSections,),
+                const SizedBox(height: BSizes.spaceBtwSections,),
 
                 // user profile card
                BUserProfileTile(onPressed: ()=> Get.to(()=> const ProfileScreen())),
-                const SizedBox(height: TSizes.spaceBtwSections,)
+                const SizedBox(height: BSizes.spaceBtwSections,)
 
 
               ],
@@ -41,12 +41,12 @@ class SettingsScreen extends StatelessWidget {
             //  body
 
            Padding(              
-              padding: const EdgeInsets.all(TSizes.defaultSpace),
+              padding: const EdgeInsets.all(BSizes.defaultSpace),
               child: Column(
                 children: [
                   // account setting
                  const BSectionHeading(title: 'Account Settings', showActionButton: false,),
-                  const SizedBox(height: TSizes.spaceBtwItems,),
+                  const SizedBox(height: BSizes.spaceBtwItems,),
                    BSettingMenuTile(
                     icon: Iconsax.safe_home, 
                     title: 'My Address', 
@@ -63,20 +63,20 @@ class SettingsScreen extends StatelessWidget {
 
                     // app settings
 
-                    const SizedBox(height: TSizes.spaceBtwSections),
+                    const SizedBox(height: BSizes.spaceBtwSections),
                     const BSectionHeading(title: 'App setting', showActionButton: false,),
-                    const SizedBox(height: TSizes.spaceBtwSections),
+                    const SizedBox(height: BSizes.spaceBtwSections),
                     const BSettingMenuTile(icon: Iconsax.document_upload, title: 'Load Data', subTitle: 'Update Data to your Cloud Firebase'),
                     BSettingMenuTile(icon: Iconsax.location, title: 'Geolocation', subTitle: 'Set recommended base on location', trailing: Switch(value: true, onChanged: (value) {}),),
                     BSettingMenuTile(icon: Iconsax.security_user, title: 'Safe mode', subTitle: 'Search result is safe for all ages', trailing: Switch(value: false, onChanged: (value){}),),
                     BSettingMenuTile(icon: Iconsax.image, title: 'HD Image Quality', subTitle: 'Set image quality to be seen', trailing: Switch(value: false, onChanged: (value){}),),
                     // logout button
 
-                    const SizedBox(height: TSizes.spaceBtwSections,),
+                    const SizedBox(height: BSizes.spaceBtwSections,),
                     SizedBox(
                       width: double.infinity,
                       child: OutlinedButton(onPressed: (){}, child: const Text('Logout')),),
-                      const SizedBox(height: TSizes.spaceBtwSections*2.5,)
+                      const SizedBox(height: BSizes.spaceBtwSections*2.5,)
                     
 
 

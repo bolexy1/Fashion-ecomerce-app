@@ -28,38 +28,38 @@ class CheckoutScreen extends StatelessWidget {
       ),
       body:   SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(TSizes.defaultSpace),
+          padding: const EdgeInsets.all(BSizes.defaultSpace),
           child: Column(
             children: [
             const BCartItems(showAddRemoveButtons: false,),
-             const SizedBox(height: TSizes.spaceBtwSections,),
+             const SizedBox(height: BSizes.spaceBtwSections,),
 
               // coupon TextField
              const BCouponCode(),
-             const SizedBox(height: TSizes.spaceBtwSections,),
+             const SizedBox(height: BSizes.spaceBtwSections,),
 
               // billing section
               BRoundedContainer(
                 showBorder: true,
-                padding: const EdgeInsets.all(TSizes.md),
-                backgroundColor: dark? TColors.black : TColors.white,
+                padding: const EdgeInsets.all(BSizes.md),
+                backgroundColor: dark? BColors.black : BColors.white,
                 child: const Column(
                   children: [
                     // pricing
                     BBillingAmounttSection(),
                     
-                     const SizedBox(height: TSizes.spaceBtwItems,),
+                     const SizedBox(height: BSizes.spaceBtwItems,),
 
                     // divider
                     const Divider(),
-                     const SizedBox(height: TSizes.spaceBtwItems),
+                     const SizedBox(height: BSizes.spaceBtwItems),
 
                     // Payment methods
                     BBillingPaymentSection(),
-                    const SizedBox(height: TSizes.spaceBtwItems),
+                    const SizedBox(height: BSizes.spaceBtwItems),
                     // address
                     BBillingAddressSection(),
-                    const SizedBox(height: TSizes.spaceBtwItems),
+                    const SizedBox(height: BSizes.spaceBtwItems),
                   ],
                 ),
               )
@@ -71,7 +71,7 @@ class CheckoutScreen extends StatelessWidget {
       ),
 
       bottomNavigationBar: Padding(
-        padding: const EdgeInsets.all(TSizes.defaultSpace ),
+        padding: const EdgeInsets.all(BSizes.defaultSpace ),
         child: ElevatedButton(onPressed: ()=> Get.to(()=> SuccessScreen(images: TImages.successfulPaymentIcon, title: 'Payment Success', subtitle: 'Your item will be shipped soon', onPressed: () => Get.offAll(()=>const NavigationMenu()),)), 
         child:const Text('Checkout \$256.0')),
       ),

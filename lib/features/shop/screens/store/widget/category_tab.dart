@@ -15,17 +15,17 @@ class BCategoryTab extends StatelessWidget {
       shrinkWrap: true,
       physics: const NeverScrollableScrollPhysics(),
       children: [Padding(
-              padding: const EdgeInsets.all(TSizes.defaultSpace),
+              padding: const EdgeInsets.all(BSizes.defaultSpace),
               child: Column(
                 children: [
                   // brands 
                  const BBrandShowcase(image: [TImages.productImage3,TImages.productImage2,TImages.productImage1],),
                  const BBrandShowcase(image: [TImages.productImage3,TImages.productImage2,TImages.productImage1],),
-                 const SizedBox(height: TSizes.spaceBtwItems,),
+                 const SizedBox(height: BSizes.spaceBtwItems,),
       
                   // products
                   BSectionHeading(title: 'You might like',  onPressed: (){},),
-                  const SizedBox(height: TSizes.spaceBtwItems,),
+                  const SizedBox(height: BSizes.spaceBtwItems,),
       
                   BGridLayout(itemCount: 4, itemBuilder: (_, index)=>const BProductCardVertical())
                 ],

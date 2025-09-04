@@ -18,8 +18,8 @@ class BProductAttributes extends StatelessWidget {
       children: [
         // selected attribute pricing
         BRoundedContainer(
-          padding: const EdgeInsets.all(TSizes.md),
-          backgroundColor: dark? TColors.darkerGrey: TColors.grey,
+          padding: const EdgeInsets.all(BSizes.md),
+          backgroundColor: dark? BColors.darkerGrey: BColors.grey,
           child: Column(
             
             
@@ -28,7 +28,7 @@ class BProductAttributes extends StatelessWidget {
               Row(
                 children: [
                   const BSectionHeading(title: 'Variation', showActionButton: false,),
-                  const SizedBox(width: TSizes.spaceBtwItems,),
+                  const SizedBox(width: BSizes.spaceBtwItems,),
                    Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -39,7 +39,7 @@ class BProductAttributes extends StatelessWidget {
                           
                           //  actual price
                             Text('\$25', style: Theme.of(context).textTheme.titleSmall!.apply(decoration: TextDecoration.lineThrough),),
-                       const SizedBox(width: TSizes.spaceBtwItems,),
+                       const SizedBox(width: BSizes.spaceBtwItems,),
                       // sale price
                       const BProductPriceText(price: '20')
                         ],
@@ -66,14 +66,14 @@ class BProductAttributes extends StatelessWidget {
             ],
           ) ,
         ),
-        const SizedBox(height: TSizes.spaceBtwItems,),
+        const SizedBox(height: BSizes.spaceBtwItems,),
 
         // attributes
          Column(
           crossAxisAlignment: CrossAxisAlignment.start,
       children: [
        const BSectionHeading(title: 'Colors', showActionButton: false,),
-      const SizedBox(height: TSizes.spaceBtwItems/2,),
+      const SizedBox(height: BSizes.spaceBtwItems/2,),
          Wrap(
           spacing: 8,
           children: [
@@ -90,7 +90,7 @@ class BProductAttributes extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
       children: [
        const BSectionHeading(title: 'Sizes'),
-       const SizedBox(height: TSizes.spaceBtwItems/2,),
+       const SizedBox(height: BSizes.spaceBtwItems/2,),
          Wrap(
           spacing: 8,
           children: [

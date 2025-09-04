@@ -29,7 +29,7 @@ class BPromoSlider extends StatelessWidget {
           items: banners.map((url) =>  BRoundedImage(image: url,)).toList(),
           
           ),
-        const SizedBox( height: TSizes.spaceBtwItems,),
+        const SizedBox( height: BSizes.spaceBtwItems,),
         Center(
           child: Obx(
             ()=> Row(
@@ -40,7 +40,7 @@ class BPromoSlider extends StatelessWidget {
                   width: 20,
                   height: 4,
                   margin: const EdgeInsets.only(right: 10),
-                  backgroundColor: controller.carouselCurrentIndex.value == i? TColors.primary:TColors.grey, 
+                  backgroundColor: controller.carouselCurrentIndex.value == i? BColors.primary:BColors.grey, 
                 ),
                 
               ],

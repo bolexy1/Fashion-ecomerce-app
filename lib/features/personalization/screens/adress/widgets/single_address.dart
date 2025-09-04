@@ -14,12 +14,12 @@ class BSingleAddress extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = BHelperFunctions.isDarkMode(context);
     return BRoundedContainer(
-      padding: const EdgeInsets.all(TSizes.md) ,
+      padding: const EdgeInsets.all(BSizes.md) ,
       width: double.infinity,
       showBorder: true,
-      backgroundColor: selectedAddress ? TColors.primary.withOpacity(0.5):Colors.transparent,
-      borderColor: selectedAddress? Colors.transparent : dark ?TColors.darkerGrey : Colors.grey,
-      margin: const EdgeInsets.only(bottom: TSizes.spaceBtwItems),
+      backgroundColor: selectedAddress ? BColors.primary.withOpacity(0.5):Colors.transparent,
+      borderColor: selectedAddress? Colors.transparent : dark ?BColors.darkerGrey : Colors.grey,
+      margin: const EdgeInsets.only(bottom: BSizes.spaceBtwItems),
       child: Stack(children: [
         Positioned(
           right: 5,
@@ -28,7 +28,7 @@ class BSingleAddress extends StatelessWidget {
             selectedAddress ?Iconsax.tick_circle5 : null, 
             color: selectedAddress 
             ? dark 
-            ? TColors.light : TColors.dark.withOpacity(0.6) :null,
+            ? BColors.light : BColors.dark.withOpacity(0.6) :null,
           ),
         ),
         Column(
@@ -38,15 +38,15 @@ class BSingleAddress extends StatelessWidget {
              maxLines: 1, 
              overflow: TextOverflow.ellipsis,
              style: Theme.of(context).textTheme.titleLarge,),
-             const SizedBox(height: TSizes.sm /2,),
+             const SizedBox(height: BSizes.sm /2,),
             const Text('07053024649',
              maxLines: 1, 
              overflow: TextOverflow.ellipsis,),
-             const SizedBox(height: TSizes.sm /2,),
+             const SizedBox(height: BSizes.sm /2,),
             const Text('odk junction, off isebo alakia Road, ibadan, Oyo state.',
             softWrap: true,
             ),
-            const SizedBox(height: TSizes.sm /2,),
+            const SizedBox(height: BSizes.sm /2,),
             
           ],
         )

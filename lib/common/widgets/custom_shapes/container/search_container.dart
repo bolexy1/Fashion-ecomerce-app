@@ -7,7 +7,7 @@ import 'package:t_store/utils/helpers/helper_functions.dart';
 
 class BSearchContainer extends StatelessWidget {
   const BSearchContainer({
-    super.key, required this.text,  this.icon = Iconsax.search_normal,  this.showBackgrond = true,  this.showBoarder = true, this.ontap, this.padding = const EdgeInsets.symmetric(horizontal: TSizes.defaultSpace)
+    super.key, required this.text,  this.icon = Iconsax.search_normal,  this.showBackgrond = true,  this.showBoarder = true, this.ontap, this.padding = const EdgeInsets.symmetric(horizontal: BSizes.defaultSpace)
   });
 
   final String text;
@@ -27,16 +27,16 @@ class BSearchContainer extends StatelessWidget {
         child: Container(
           
           width: BDeviceUtils.getScreenWidth(context),
-          padding: const EdgeInsets.all(TSizes.md),
+          padding: const EdgeInsets.all(BSizes.md),
           decoration: BoxDecoration(
-            color: showBackgrond ? dark ? TColors.dark:TColors.light: Colors.transparent,
-            borderRadius: BorderRadius.circular(TSizes.cardRadiusLg),
-            border: showBoarder ? Border.all(color: TColors.grey ): null 
+            color: showBackgrond ? dark ? BColors.dark:BColors.light: Colors.transparent,
+            borderRadius: BorderRadius.circular(BSizes.cardRadiusLg),
+            border: showBoarder ? Border.all(color: BColors.grey ): null 
           ),
           child:  Row(
             children: [
-               Icon(icon, color: TColors.darkerGrey,),
-               const SizedBox(width: TSizes.spaceBtwItems,),
+               Icon(icon, color: BColors.darkerGrey,),
+               const SizedBox(width: BSizes.spaceBtwItems,),
                Text(text, style:  Theme.of(context).textTheme.bodySmall)
             ],
           ),

@@ -28,16 +28,16 @@ class BProductCardVertical extends StatelessWidget {
         padding: const EdgeInsets.all(1),      
         decoration: BoxDecoration(
           boxShadow: [BShadowStyle.verticalProductShadow],
-          borderRadius: BorderRadius.circular(TSizes.productImageRadius),
-          color: dark?TColors.darkerGrey : TColors.white,
+          borderRadius: BorderRadius.circular(BSizes.productImageRadius),
+          color: dark?BColors.darkerGrey : BColors.white,
         ),
         child: Column(
           children: [
             // thumbnail, wishlist button, discount tag
             BRoundedContainer(
               height: 180,              
-                padding: const EdgeInsets.all(TSizes.sm),
-              backgroundColor: dark ? TColors.dark:TColors.light,              
+                padding: const EdgeInsets.all(BSizes.sm),
+              backgroundColor: dark ? BColors.dark:BColors.light,              
               child:  Stack(
                 children: [
                   // thumbnail image
@@ -48,10 +48,10 @@ class BProductCardVertical extends StatelessWidget {
                   Positioned(
                     top: 12,
                     child: BRoundedContainer(
-                      radius: TSizes.md,
-                      backgroundColor: TColors.secondary.withOpacity(0.8),
-                      padding: const EdgeInsets.symmetric(horizontal: TSizes.sm, vertical:TSizes.xs, ),
-                      child: Text("25%", style: Theme.of(context).textTheme.labelLarge!.apply(color: TColors.black)),
+                      radius: BSizes.md,
+                      backgroundColor: BColors.secondary.withOpacity(0.8),
+                      padding: const EdgeInsets.symmetric(horizontal: BSizes.sm, vertical:BSizes.xs, ),
+                      child: Text("25%", style: Theme.of(context).textTheme.labelLarge!.apply(color: BColors.black)),
                     ),
                   ),
       
@@ -65,17 +65,17 @@ class BProductCardVertical extends StatelessWidget {
                 ],
               ),
             ),
-            const SizedBox(height: TSizes.spaceBtwItems/2,),  
+            const SizedBox(height: BSizes.spaceBtwItems/2,),  
             // details 
            const Padding(
-                    padding: EdgeInsets.only(left: TSizes.sm),
+                    padding: EdgeInsets.only(left: BSizes.sm),
                     child: SizedBox(
                       width: double.infinity,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           BProductTitleText(title: "Green Nike Air shoes", smallSize: true,),
-                          SizedBox(height: TSizes.spaceBtwItems/2,),
+                          SizedBox(height: BSizes.spaceBtwItems/2,),
                            BBrandTitleWithVerifiedIcon(title: 'Nike',),  
                           
                         ],
@@ -91,23 +91,23 @@ class BProductCardVertical extends StatelessWidget {
                             children: [
                               // price
                             const Padding(
-                               padding:  EdgeInsets.only(left: TSizes.sm),
+                               padding:  EdgeInsets.only(left: BSizes.sm),
                                child:   BProductPriceText(price: '35.0', ),
                              ),
 
                             //  add to cart
                               Container(
                                 decoration: const BoxDecoration(
-                                  color: TColors.dark,
+                                  color: BColors.dark,
                                   borderRadius: BorderRadius.only(
-                                    topLeft: Radius.circular(TSizes.cardRadiusMd),
-                                    bottomRight:  Radius.circular(TSizes.productImageRadius),
+                                    topLeft: Radius.circular(BSizes.cardRadiusMd),
+                                    bottomRight:  Radius.circular(BSizes.productImageRadius),
                                   )
                                 ),
                                 child: const SizedBox(
-                                   width: TSizes.iconLg*1.2,
-                                  height:TSizes.iconLg*1.2 ,
-                                  child:  Center(child: Icon(Iconsax.add, color: TColors.white,))
+                                   width: BSizes.iconLg*1.2,
+                                  height:BSizes.iconLg*1.2 ,
+                                  child:  Center(child: Icon(Iconsax.add, color: BColors.white,))
                                   ),
                               )
                                  

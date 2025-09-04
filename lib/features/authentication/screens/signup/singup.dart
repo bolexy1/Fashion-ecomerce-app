@@ -17,20 +17,20 @@ class SingupScreen extends StatelessWidget {
       appBar: AppBar(),
       body: SingleChildScrollView(
         child:Padding(
-          padding: const EdgeInsets.all(TSizes.defaultSpace),
+          padding: const EdgeInsets.all(BSizes.defaultSpace),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               // title
               Text(TTexts.signupTitle,style: Theme.of(context).textTheme.headlineMedium,),
-              const SizedBox(height: TSizes.spaceBtwSections,),
+              const SizedBox(height: BSizes.spaceBtwSections,),
 
               // form
               const SignupForm(),
-              const SizedBox(height: TSizes.spaceBtwInputFields,),
+              const SizedBox(height: BSizes.spaceBtwInputFields,),
               // divider
               LoginDivider(dividerText: TTexts.orSignInWith.capitalize!),
-              const SizedBox(height: TSizes.spaceBtwInputFields,),
+              const SizedBox(height: BSizes.spaceBtwInputFields,),
 
               // social buttons
 

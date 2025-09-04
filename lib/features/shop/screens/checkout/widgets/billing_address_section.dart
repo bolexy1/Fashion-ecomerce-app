@@ -12,23 +12,23 @@ class BBillingAddressSection extends StatelessWidget {
       children: [
         BSectionHeading(title: 'Shipping Address', buttonTitle: 'Change', onPressed: (){},),
         Text('Address', style: Theme.of(context).textTheme.bodyLarge,),
-        const SizedBox(height: TSizes.spaceBtwItems/2),
+        const SizedBox(height: BSizes.spaceBtwItems/2),
         Row(
           children: [
             const Icon(Icons.phone, color: Colors.grey, size: 16,),
-            const SizedBox(width: TSizes.spaceBtwItems,),
+            const SizedBox(width: BSizes.spaceBtwItems,),
             Text('07053024649', style: Theme.of(context).textTheme.bodyMedium,)
           ],
         ),
-        const SizedBox(height: TSizes.spaceBtwItems/2),
+        const SizedBox(height: BSizes.spaceBtwItems/2),
         Row(
           children: [
             const Icon(Icons.location_history, color: Colors.grey, size: 16,),
-            const SizedBox(width: TSizes.spaceBtwItems,),
+            const SizedBox(width: BSizes.spaceBtwItems,),
             Text('Odk, Isebo Road, off Alakia, Ibadan, Oyo State.', style: Theme.of(context).textTheme.bodyMedium, softWrap: true,)
           ],
         ),
-        const SizedBox(height: TSizes.spaceBtwItems/2),
+        const SizedBox(height: BSizes.spaceBtwItems/2),
         
       ],
     );

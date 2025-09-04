@@ -4,7 +4,7 @@ import 'package:t_store/utils/constants/sizes.dart';
 
 class BRoundedContainer extends StatelessWidget {
   const BRoundedContainer({
-    super.key, this.width , this.height,  this.radius = TSizes.cardRadiusLg, this.padding, this.child,  this.backgroundColor = TColors.white,  this.margin,  this.borderColor =TColors.borderPrimary,  this.showBorder = false ,
+    super.key, this.width , this.height,  this.radius = BSizes.cardRadiusLg, this.padding, this.child,  this.backgroundColor = BColors.white,  this.margin,  this.borderColor =BColors.borderPrimary,  this.showBorder = false ,
   });
 
   final double ? width;

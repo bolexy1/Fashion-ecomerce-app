@@ -19,19 +19,19 @@ class ProductReviewsScreen extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(TSizes.defaultSpace),
+          padding: const EdgeInsets.all(BSizes.defaultSpace),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
              const Text('Rating and review are verified and are from people who use the same type of device that you use'),
-              const SizedBox(height: TSizes.spaceBtwItems,),
+              const SizedBox(height: BSizes.spaceBtwItems,),
               
               // overall product rating 
               const BOverallProductRating(),
               // rating
               const BRatingBarIndicator(rating: 3.5,),
               Text('12,611', style: Theme.of(context).textTheme.bodySmall,),
-              const SizedBox(height: TSizes.spaceBtwSections,),
+              const SizedBox(height: BSizes.spaceBtwSections,),
 
               // user review List
               const UserReviewCard(),

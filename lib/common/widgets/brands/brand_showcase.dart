@@ -16,15 +16,15 @@ class BBrandShowcase extends StatelessWidget {
   Widget build(BuildContext context) {
     return BRoundedContainer(
       showBorder: true,
-      borderColor: TColors.darkGrey,
+      borderColor: BColors.darkGrey,
       backgroundColor: Colors.transparent,
-      padding: const EdgeInsets.all(TSizes.md),
-      margin: const EdgeInsets.only(bottom: TSizes.spaceBtwItems),
+      padding: const EdgeInsets.all(BSizes.md),
+      margin: const EdgeInsets.only(bottom: BSizes.spaceBtwItems),
       child: Column(
         children: [
           // brand with Products count
           const BBrandCard(showBoarder: false),
-          const SizedBox(height: TSizes.spaceBtwItems,),
+          const SizedBox(height: BSizes.spaceBtwItems,),
           // brand top 3 product image
           Row(
             children: image.map((image) =>brandTopProductImageWidget(image, context)).toList()
@@ -39,9 +39,9 @@ Widget brandTopProductImageWidget(String image, context){
   return Expanded(
                 child: BRoundedContainer(
                   height: 100,
-                  backgroundColor: BHelperFunctions.isDarkMode(context)?TColors.darkGrey:TColors.light,
-                  margin: const EdgeInsets.only(right: TSizes.sm),
-                  padding: const EdgeInsets.all(TSizes.md),
+                  backgroundColor: BHelperFunctions.isDarkMode(context)?BColors.darkGrey:BColors.light,
+                  margin: const EdgeInsets.only(right: BSizes.sm),
+                  padding: const EdgeInsets.all(BSizes.md),
                   child:  Image(
                     fit: BoxFit.contain,
                     image: AssetImage(image)),

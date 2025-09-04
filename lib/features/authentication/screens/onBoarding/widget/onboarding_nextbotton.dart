@@ -16,9 +16,9 @@ class onboardingNextBotton extends StatelessWidget {
     final dark =BHelperFunctions.isDarkMode(context);
     return Positioned(
       bottom: BDeviceUtils.getBottomNavigationBarHeight(),
-      right: TSizes.defaultSpace,
+      right: BSizes.defaultSpace,
       child: ElevatedButton(onPressed: ()=> OnboardingController.instance.nextPage(),
-      style: ElevatedButton.styleFrom(shape: const CircleBorder(), backgroundColor:dark?  TColors.primary: Colors.black  ),
+      style: ElevatedButton.styleFrom(shape: const CircleBorder(), backgroundColor:dark?  BColors.primary: Colors.black  ),
        child: const Icon(Iconsax.arrow_right_1)),);
   }
 }

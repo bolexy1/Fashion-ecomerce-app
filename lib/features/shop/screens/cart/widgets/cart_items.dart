@@ -13,14 +13,14 @@ class BCartItems extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.separated(
           shrinkWrap: true,
-          separatorBuilder: (_,__) => SizedBox(height: TSizes.spaceBtwSections,),
+          separatorBuilder: (_,__) => SizedBox(height: BSizes.spaceBtwSections,),
            itemCount: 2,
             itemBuilder: (_, index)
             =>  Column(
               children: [
                 // cartItem
                 const BCartItem(),
-               if(showAddRemoveButtons) const SizedBox(height: TSizes.spaceBtwItems,),
+               if(showAddRemoveButtons) const SizedBox(height: BSizes.spaceBtwItems,),
                 // add Remove button row with total price
                 if(showAddRemoveButtons)
                 const Row(

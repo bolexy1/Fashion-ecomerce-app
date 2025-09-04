@@ -26,12 +26,12 @@ class BCartCounterIcon extends StatelessWidget {
             width: 18,
             height: 18,
             decoration: BoxDecoration(
-              color:couterBgColor??(dark?TColors.white:TColors.black),
+              color:couterBgColor??(dark?BColors.white:BColors.black),
               borderRadius: BorderRadius.circular(100),
             ),
             child:  
             Center(
-              child: Text("2", style: Theme.of(context).textTheme.labelLarge!.apply(color:counterTextColor??(dark ? TColors.white: TColors.black), fontSizeFactor: 0.8))                              ,
+              child: Text("2", style: Theme.of(context).textTheme.labelLarge!.apply(color:counterTextColor??(dark ? BColors.white: BColors.black), fontSizeFactor: 0.8))                              ,
           ),
         ))
       ],

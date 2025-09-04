@@ -23,18 +23,18 @@ class BBrandCard extends StatelessWidget {
     return GestureDetector(
     onTap: onTap,
     child: BRoundedContainer(
-      padding: const EdgeInsets.all(TSizes.sm),
+      padding: const EdgeInsets.all(BSizes.sm),
       showBorder: showBoarder,
       backgroundColor: Colors.transparent,
       child: Row(
         children: [
           // icon
           Flexible(
-            child: BCircularImage(image: TImages.clothIcon,backgroundColor: Colors.transparent, isNetworkImage: false, overlayColor: isDark ? TColors.white:TColors.black,
+            child: BCircularImage(image: TImages.clothIcon,backgroundColor: Colors.transparent, isNetworkImage: false, overlayColor: isDark ? BColors.white:BColors.black,
             
             ),
           ),
-          const SizedBox(width: TSizes.spaceBtwItems/2,),
+          const SizedBox(width: BSizes.spaceBtwItems/2,),
     
           // text
           Expanded(
@@ -42,7 +42,7 @@ class BBrandCard extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const BBrandTitleWithVerifiedIcon(title: 'Nike', brandTextSize: TextSizes.large,),  
+                const BBrandTitleWithVerifiedIcon(title: 'Nike', brandTextSize: TexBSizes.large,),  
                 Text("256 products with asjbsd ",
                 overflow: TextOverflow.ellipsis,
                 style: Theme.of(context).textTheme.labelMedium)

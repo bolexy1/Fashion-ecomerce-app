@@ -22,8 +22,8 @@ class BRatingProgressIndicator extends StatelessWidget {
             child: LinearProgressIndicator(
               value: value,
               minHeight: 11,
-              backgroundColor: TColors.grey,
-              valueColor: const AlwaysStoppedAnimation(TColors.primary),
+              backgroundColor: BColors.grey,
+              valueColor: const AlwaysStoppedAnimation(BColors.primary),
               borderRadius: BorderRadius.circular(7),
               ),
           ),

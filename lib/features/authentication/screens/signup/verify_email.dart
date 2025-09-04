@@ -22,22 +22,22 @@ class VerifyEmail extends StatelessWidget {
       ),
       body:  SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(TSizes.defaultSpace),
+          padding: const EdgeInsets.all(BSizes.defaultSpace),
           child: Column(
             children: [
               // image
               Image(
                 image: const AssetImage(TImages.deliveredEmailIllustration), width: BHelperFunctions.screenWidth()*0.6),
-               const SizedBox(height: TSizes.spaceBtwSections,),
+               const SizedBox(height: BSizes.spaceBtwSections,),
 
 
               // Title & subtitle
               Text(TTexts.confirmEmail, style: Theme.of(context).textTheme.headlineMedium, textAlign: TextAlign.center,),
-              const SizedBox(height: TSizes.spaceBtwItems,),
+              const SizedBox(height: BSizes.spaceBtwItems,),
               Text("Bolexy1@gmail.com", style: Theme.of(context).textTheme.labelLarge, textAlign: TextAlign.center,),
-              const SizedBox(height: TSizes.spaceBtwItems,),
+              const SizedBox(height: BSizes.spaceBtwItems,),
               Text(TTexts.confirmEmailSubTitle, style: Theme.of(context).textTheme.labelMedium, textAlign: TextAlign.center,),
-              const SizedBox(height: TSizes.spaceBtwSections,),
+              const SizedBox(height: BSizes.spaceBtwSections,),
 
               // buttons
               SizedBox(width: double.infinity, child: ElevatedButton(onPressed: ()=>Get.to(()=> SuccessScreen(
@@ -45,7 +45,7 @@ class VerifyEmail extends StatelessWidget {
                title: TTexts.yourAccountCreatedTitle, 
                subtitle: TTexts.yourAccountCreatedSubTitle,
                 onPressed: () => Get.to(()=> const LoginScreen()))), child: const Text(TTexts.tContinue))),
-              const SizedBox(height: TSizes.spaceBtwItems,),
+              const SizedBox(height: BSizes.spaceBtwItems,),
               SizedBox(width: double.infinity, child: TextButton(onPressed: (){}, child: const Text(TTexts.resendEmail)),),
 
             ],

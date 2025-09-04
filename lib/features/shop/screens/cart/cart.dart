@@ -22,11 +22,11 @@ class CartScreen extends StatelessWidget {
         title: Text('Cart', style:  Theme.of(context).textTheme.headlineSmall,),
       ),
       body: const Padding(
-        padding: EdgeInsets.all(TSizes.defaultSpace),
+        padding: EdgeInsets.all(BSizes.defaultSpace),
          child: BCartItems(),),
 
       bottomNavigationBar: Padding(
-        padding: const EdgeInsets.all(TSizes.defaultSpace ),
+        padding: const EdgeInsets.all(BSizes.defaultSpace ),
         child: ElevatedButton(onPressed: ()=> Get.to(()=> const CheckoutScreen()), child:const Text('Checkout \$256.0')),
       ),
     );

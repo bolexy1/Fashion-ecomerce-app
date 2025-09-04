@@ -16,6 +16,6 @@ class BRatingBarIndicator extends StatelessWidget {
       itemCount: 5,
       itemSize: 20,
       rating: rating,
-      itemBuilder: (_, __)=> const Icon(Iconsax.star1, color: TColors.primary,));
+      itemBuilder: (_, __)=> const Icon(Iconsax.star1, color: BColors.primary,));
   }
 }

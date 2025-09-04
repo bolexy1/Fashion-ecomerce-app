@@ -20,14 +20,14 @@ class SuccessScreen extends StatelessWidget {
             children: [
               Image(
                 image:  AssetImage(images), width: BHelperFunctions.screenWidth()*0.6),
-               const SizedBox(height: TSizes.spaceBtwSections,),
+               const SizedBox(height: BSizes.spaceBtwSections,),
 
 
               // Title & subtitle
               Text(title, style: Theme.of(context).textTheme.headlineMedium, textAlign: TextAlign.center,),
-              const SizedBox(height: TSizes.spaceBtwItems,),       
+              const SizedBox(height: BSizes.spaceBtwItems,),       
               Text(subtitle, style: Theme.of(context).textTheme.labelMedium, textAlign: TextAlign.center,),
-              const SizedBox(height: TSizes.spaceBtwSections,),
+              const SizedBox(height: BSizes.spaceBtwSections,),
 
               SizedBox(width: double.infinity, child: ElevatedButton(onPressed: onPressed, child: const Text(TTexts.tContinue)),),
             ],

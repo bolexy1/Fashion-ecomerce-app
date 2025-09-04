@@ -17,8 +17,8 @@ class UserAddressScreen extends StatelessWidget {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         onPressed: ()=>Get.to(()=>const AddNewAddressScreen()),
-        backgroundColor: TColors.primary,
-        child: const Icon(Iconsax.add, color: TColors.white,),
+        backgroundColor: BColors.primary,
+        child: const Icon(Iconsax.add, color: BColors.white,),
         ),
         appBar:  BAppbar(
           showBackArrow: true,
@@ -27,7 +27,7 @@ class UserAddressScreen extends StatelessWidget {
 
         body:const SingleChildScrollView(
           child: Padding(
-            padding: EdgeInsets.all(TSizes.defaultSpace),
+            padding: EdgeInsets.all(BSizes.defaultSpace),
             child: Column(
               children: [
                 BSingleAddress(selectedAddress: false),

@@ -1,5 +1,5 @@
 
-class TSizes {
+class BSizes {
   // Padding and margin sizes
   static const double xs = 4.0;
   static const double sm = 8.0;
@@ -14,7 +14,7 @@ class TSizes {
   static const double iconLg = 32.0;
 
   // Font sizes
-  static const double fontSizeSm = 14.0;
+  static const double fonBSizesm = 14.0;
   static const double fontSizeMd = 16.0;
   static const double fontSizeLg = 18.0;
 

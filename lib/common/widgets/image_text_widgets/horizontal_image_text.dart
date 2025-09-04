@@ -4,7 +4,7 @@ import 'package:t_store/utils/constants/sizes.dart';
 import 'package:t_store/utils/helpers/helper_functions.dart';
 class BHorizontalimageText extends StatelessWidget {
   const BHorizontalimageText({
-    super.key, required this.image, required this.title,  this.textColor = TColors.white, this.backgroundColor = TColors.white, this.ontap,
+    super.key, required this.image, required this.title,  this.textColor = BColors.white, this.backgroundColor = BColors.white, this.ontap,
   });
 
   final String image, title;
@@ -18,25 +18,25 @@ class BHorizontalimageText extends StatelessWidget {
     return GestureDetector(
       onTap: ontap,
       child: Padding(
-        padding: const EdgeInsets.only(right:TSizes.spaceBtwItems),
+        padding: const EdgeInsets.only(right:BSizes.spaceBtwItems),
         child: Column(
           children: [
             Container(
               width: 56,
               height: 56,
-              padding: const EdgeInsets.all(TSizes.sm),
+              padding: const EdgeInsets.all(BSizes.sm),
               decoration: BoxDecoration(
-                color: backgroundColor ?? (dark? TColors.white:TColors.black ),
+                color: backgroundColor ?? (dark? BColors.white:BColors.black ),
                 borderRadius: BorderRadius.circular(100)
               ),
               child:  Center(
                 child: Image(     
                   fit: BoxFit.cover, 
-                  color: dark ? TColors.black: TColors.white  ,                                
+                  color: dark ? BColors.black: BColors.white  ,                                
                   image: AssetImage(image)),
               ) ,
             ),
-            const SizedBox(height: TSizes.spaceBtwItems,),
+            const SizedBox(height: BSizes.spaceBtwItems,),
             SizedBox( width:55, child:  Text(title, style:  Theme.of(context).textTheme.labelMedium!.apply(color:textColor), maxLines: 1,overflow:TextOverflow.ellipsis,))
             // text
           ],

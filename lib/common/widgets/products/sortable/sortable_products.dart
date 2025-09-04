@@ -22,7 +22,7 @@ class BSortableProducts extends StatelessWidget {
               value: option,
               child: Text(option))).toList(),               
           ),
-          const SizedBox(height: TSizes.spaceBtwSections,),
+          const SizedBox(height: BSizes.spaceBtwSections,),
           // products
           BGridLayout(
             itemCount: 8, itemBuilder: (_, index)=> const BProductCardVertical() )

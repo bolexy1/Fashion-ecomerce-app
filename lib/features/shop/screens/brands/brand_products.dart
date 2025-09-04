@@ -13,13 +13,13 @@ class BBrandProducts extends StatelessWidget {
       appBar: BAppbar( title: Text('Nike')),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(TSizes.defaultSpace),
+          padding: EdgeInsets.all(BSizes.defaultSpace),
           child: Column(
             children: [
               // brand details
 
               BBrandCard(showBoarder: true),
-              SizedBox(height: TSizes.spaceBtwSections,),
+              SizedBox(height: BSizes.spaceBtwSections,),
 
               BSortableProducts(),
 

@@ -17,8 +17,8 @@ class BGridLayout extends StatelessWidget {
       physics: const NeverScrollableScrollPhysics(),
       gridDelegate:SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
-         mainAxisSpacing: TSizes.gridViewSpacing,
-         crossAxisSpacing:TSizes.gridViewSpacing,
+         mainAxisSpacing: BSizes.gridViewSpacing,
+         crossAxisSpacing:BSizes.gridViewSpacing,
         mainAxisExtent: mainAxisExtent), 
         itemBuilder: itemBuilder);
   }

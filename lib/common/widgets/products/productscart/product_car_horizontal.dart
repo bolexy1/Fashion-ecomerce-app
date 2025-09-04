@@ -22,16 +22,16 @@ class BProductCarHorizontal extends StatelessWidget {
          width: 310,
         padding: const EdgeInsets.all(1),      
         decoration: BoxDecoration(          
-          borderRadius: BorderRadius.circular(TSizes.productImageRadius),
-          color: dark?TColors.darkerGrey : TColors.softGrey,
+          borderRadius: BorderRadius.circular(BSizes.productImageRadius),
+          color: dark?BColors.darkerGrey : BColors.softGrey,
         ),
         child: Row(
           children: [
             // thumbnail
             BRoundedContainer(
               height: 120,
-              padding: const EdgeInsets.all(TSizes.sm),
-              backgroundColor: dark ? TColors.dark: TColors.light,
+              padding: const EdgeInsets.all(BSizes.sm),
+              backgroundColor: dark ? BColors.dark: BColors.light,
               child:  Stack(
                 children: [
                   // Thumbnail image
@@ -44,11 +44,11 @@ class BProductCarHorizontal extends StatelessWidget {
                      Positioned(
                     top: 12,
                     child: BRoundedContainer(
-                      radius: TSizes.md,
+                      radius: BSizes.md,
                       // ignore: deprecated_member_use
-                      backgroundColor: TColors.secondary.withOpacity(0.8),
-                      padding: const EdgeInsets.symmetric(horizontal: TSizes.sm, vertical:TSizes.xs, ),
-                      child: Text("25%", style: Theme.of(context).textTheme.labelLarge!.apply(color: TColors.black)),
+                      backgroundColor: BColors.secondary.withOpacity(0.8),
+                      padding: const EdgeInsets.symmetric(horizontal: BSizes.sm, vertical:BSizes.xs, ),
+                      child: Text("25%", style: Theme.of(context).textTheme.labelLarge!.apply(color: BColors.black)),
                     ),
                   ),
       
@@ -66,14 +66,14 @@ class BProductCarHorizontal extends StatelessWidget {
             SizedBox(
               width: 172,
               child: Padding(
-                padding: const EdgeInsets.only(top: TSizes.sm, left: TSizes.sm),
+                padding: const EdgeInsets.only(top: BSizes.sm, left: BSizes.sm),
                 child: Column(
                   children: [
                     const Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         BProductTitleText(title: 'Green nike half Sleeves shirt', smallSize: true,),
-                        SizedBox(height: TSizes.spaceBtwItems/2,),
+                        SizedBox(height: BSizes.spaceBtwItems/2,),
                         BBrandTitleWithVerifiedIcon(title: 'Nike')
                       ],
                     ),
@@ -89,16 +89,16 @@ class BProductCarHorizontal extends StatelessWidget {
                           // add to cart
                           Container(
                                 decoration: const BoxDecoration(
-                                  color: TColors.dark,
+                                  color: BColors.dark,
                                   borderRadius: BorderRadius.only(
-                                    topLeft: Radius.circular(TSizes.cardRadiusMd),
-                                    bottomRight:  Radius.circular(TSizes.productImageRadius),
+                                    topLeft: Radius.circular(BSizes.cardRadiusMd),
+                                    bottomRight:  Radius.circular(BSizes.productImageRadius),
                                   )
                                 ),
                                 child: const SizedBox(
-                                   width: TSizes.iconLg*1.2,
-                                  height:TSizes.iconLg*1.2 ,
-                                  child:  Center(child: Icon(Iconsax.add, color: TColors.white,))
+                                   width: BSizes.iconLg*1.2,
+                                  height:BSizes.iconLg*1.2 ,
+                                  child:  Center(child: Icon(Iconsax.add, color: BColors.white,))
                                   ),
                               ),
                         ],

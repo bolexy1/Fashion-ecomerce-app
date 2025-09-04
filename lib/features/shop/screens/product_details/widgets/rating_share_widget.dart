@@ -15,7 +15,7 @@ class BRatingAndShare extends StatelessWidget {
         Row(                        
           children: [
            const Icon(Iconsax.star5, color: Colors.amber,size: 24,),
-           const SizedBox(width: TSizes.spaceBtwItems/2,),
+           const SizedBox(width: BSizes.spaceBtwItems/2,),
             Text.rich(
               TextSpan(
                 children: [
@@ -28,7 +28,7 @@ class BRatingAndShare extends StatelessWidget {
           ],
         ),
        // share 
-         IconButton(onPressed: (){}, icon: const Icon(Icons.share, size: TSizes.iconMd,))
+         IconButton(onPressed: (){}, icon: const Icon(Icons.share, size: BSizes.iconMd,))
     
       ],
     );

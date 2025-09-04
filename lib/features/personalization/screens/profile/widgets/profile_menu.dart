@@ -15,7 +15,7 @@ class BProfileMenu extends StatelessWidget {
     return GestureDetector(
       onTap: onPressed,
       child: Padding(
-        padding: const EdgeInsets.all(TSizes.spaceBtwItems/1.5),
+        padding: const EdgeInsets.all(BSizes.spaceBtwItems/1.5),
         child: Row(
          children: [
            Expanded(flex: 3, child: Text(title, style: Theme.of(context).textTheme.bodySmall,overflow: TextOverflow.ellipsis,)),

@@ -17,7 +17,7 @@ class BBillingAmounttSection extends StatelessWidget {
             
           ],
         ),
-        const SizedBox(height: TSizes.spaceBtwItems/2,),
+        const SizedBox(height: BSizes.spaceBtwItems/2,),
 
         // shipping fee
         Row(
@@ -28,7 +28,7 @@ class BBillingAmounttSection extends StatelessWidget {
             
           ],
         ),
-        const SizedBox(height: TSizes.spaceBtwItems/2,),
+        const SizedBox(height: BSizes.spaceBtwItems/2,),
 
         // tax fee
         Row(
@@ -39,7 +39,7 @@ class BBillingAmounttSection extends StatelessWidget {
             
           ],
         ),
-        const SizedBox(height: TSizes.spaceBtwItems/2,),
+        const SizedBox(height: BSizes.spaceBtwItems/2,),
 
         // order total
         Row(
@@ -50,7 +50,7 @@ class BBillingAmounttSection extends StatelessWidget {
             
           ],
         ),
-        const SizedBox(height: TSizes.spaceBtwItems/2,),
+        const SizedBox(height: BSizes.spaceBtwItems/2,),
 
       ],
     );

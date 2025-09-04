@@ -14,11 +14,11 @@ class BOrderListItems extends StatelessWidget {
     return ListView.separated(
       itemCount: 5,
       shrinkWrap: true,
-      separatorBuilder: (_, __)=> const SizedBox(height: TSizes.spaceBtwItems,),
+      separatorBuilder: (_, __)=> const SizedBox(height: BSizes.spaceBtwItems,),
       itemBuilder: (_, index)=> BRoundedContainer(
         showBorder: true,
-        padding: const EdgeInsets.all(TSizes.md),
-        backgroundColor:  dark ? TColors.dark : TColors.light,
+        padding: const EdgeInsets.all(BSizes.md),
+        backgroundColor:  dark ? BColors.dark : BColors.light,
         child:  Column(        
           mainAxisSize: MainAxisSize.min,
           children: [
@@ -28,7 +28,7 @@ class BOrderListItems extends StatelessWidget {
                 
                 // 1 icon
                 const Icon(Iconsax.ship),
-                const SizedBox(width: TSizes.spaceBtwItems/2,),
+                const SizedBox(width: BSizes.spaceBtwItems/2,),
       
                 // status
                 Expanded(
@@ -37,7 +37,7 @@ class BOrderListItems extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text('Processing',
-                      style: Theme.of(context).textTheme.bodyLarge!.apply(color: TColors.primary, fontWeightDelta: 1),
+                      style: Theme.of(context).textTheme.bodyLarge!.apply(color: BColors.primary, fontWeightDelta: 1),
                       ),
                       Text('03 Sept 2025',
                       style: Theme.of(context).textTheme.headlineSmall,
@@ -47,11 +47,11 @@ class BOrderListItems extends StatelessWidget {
                 ),
       
                 // 3 icon
-                IconButton(onPressed: (){}, icon: const Icon(Iconsax.arrow_right_34, size: TSizes.iconSm,))
+                IconButton(onPressed: (){}, icon: const Icon(Iconsax.arrow_right_34, size: BSizes.iconSm,))
       
               ],
             ),
-            const SizedBox(height: TSizes.spaceBtwItems,),
+            const SizedBox(height: BSizes.spaceBtwItems,),
             // row 2
             Row(
               children: [
@@ -61,7 +61,7 @@ class BOrderListItems extends StatelessWidget {
                       
                       // 1 icon
                       const Icon(Iconsax.tag),
-                      const SizedBox(width: TSizes.spaceBtwItems/2,),
+                      const SizedBox(width: BSizes.spaceBtwItems/2,),
                   
                       // status
                       Expanded(
@@ -87,7 +87,7 @@ class BOrderListItems extends StatelessWidget {
                       
                       // 1 icon
                       const Icon(Iconsax.calendar),
-                      const SizedBox(width: TSizes.spaceBtwItems/2,),
+                      const SizedBox(width: BSizes.spaceBtwItems/2,),
                   
                       // status
                       Expanded(

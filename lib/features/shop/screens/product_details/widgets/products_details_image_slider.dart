@@ -22,13 +22,13 @@ class BProductsImageSlider extends StatelessWidget {
     final isDark = BHelperFunctions.isDarkMode(context);
     return BCurvedEdgesWidget(
       child: Container(
-        color: isDark ? TColors.darkerGrey:TColors.light,
+        color: isDark ? BColors.darkerGrey:BColors.light,
         child: Stack(
           children: [
             // image 
           const SizedBox(height: 400, 
           child: Padding(
-            padding: const EdgeInsets.all(TSizes.productImageRadius *2),
+            padding: const EdgeInsets.all(BSizes.productImageRadius *2),
             child: Center(child: Image(image: AssetImage(TImages.productImage1))),
           )
           ),
@@ -37,11 +37,11 @@ class BProductsImageSlider extends StatelessWidget {
           Positioned(
             bottom: 30,
             right: 0,
-            left: TSizes.defaultSpace,
+            left: BSizes.defaultSpace,
             child: SizedBox(
               height: 80,
               child: ListView.separated( 
-                separatorBuilder: (_, __)=>const SizedBox(width: TSizes.spaceBtwItems,), 
+                separatorBuilder: (_, __)=>const SizedBox(width: BSizes.spaceBtwItems,), 
                 scrollDirection: Axis.horizontal, 
                 physics:const AlwaysScrollableScrollPhysics(), 
                 shrinkWrap: true, 
@@ -49,9 +49,9 @@ class BProductsImageSlider extends StatelessWidget {
                 itemBuilder: (_, index)
               =>  BRoundedImage(
                 width:80 ,         
-                backgroundColor: isDark ? TColors.dark : TColors.white,   
-                border: Border.all(color: TColors.primary), 
-                padding: const EdgeInsets.all(TSizes.sm),       
+                backgroundColor: isDark ? BColors.dark : BColors.white,   
+                border: Border.all(color: BColors.primary), 
+                padding: const EdgeInsets.all(BSizes.sm),       
                 image: TImages.productImage3) ,),
             ),
           ),

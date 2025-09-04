@@ -21,7 +21,7 @@ class BChoiceChip extends StatelessWidget {
             label: isColor ? const SizedBox():  Text(text), 
           selected: selected, 
           onSelected: onSelected, 
-          labelStyle:  TextStyle(color: selected ? TColors.white : null),
+          labelStyle:  TextStyle(color: selected ? BColors.white : null),
           avatar: isColor 
                  ? TCircularContainer(width: 50, height: 50, backgroundColor: BHelperFunctions.getColor(text)!,) : null,
           shape: isColor ? const CircleBorder(): null,

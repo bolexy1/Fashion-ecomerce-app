@@ -12,12 +12,12 @@ class BBottomAddToCart extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = BHelperFunctions.isDarkMode(context);
     return  Container(
-      padding: const EdgeInsets.symmetric(horizontal: TSizes.defaultSpace, vertical: TSizes.defaultSpace/2),
+      padding: const EdgeInsets.symmetric(horizontal: BSizes.defaultSpace, vertical: BSizes.defaultSpace/2),
       decoration: BoxDecoration(
-        color: dark ? TColors.darkerGrey : TColors.light,
+        color: dark ? BColors.darkerGrey : BColors.light,
         borderRadius: const BorderRadius.only(
-          topLeft: Radius.circular(TSizes.cardRadiusLg),
-          topRight: Radius.circular(TSizes.cardRadiusLg)
+          topLeft: Radius.circular(BSizes.cardRadiusLg),
+          topRight: Radius.circular(BSizes.cardRadiusLg)
         )
       ),
       child: Row(
@@ -26,19 +26,19 @@ class BBottomAddToCart extends StatelessWidget {
           Row(
             children: [
              const BCirclarIcon(icon: Iconsax.minus,
-              backgroundColor: TColors.darkGrey,
+              backgroundColor: BColors.darkGrey,
               width: 40,
               height: 40,
-              color: TColors.white,
+              color: BColors.white,
               ),
-              const SizedBox(width: TSizes.spaceBtwItems,),
+              const SizedBox(width: BSizes.spaceBtwItems,),
               Text('2', style: Theme.of(context).textTheme.titleSmall,),
-              const SizedBox(width:  TSizes.spaceBtwItems,),
+              const SizedBox(width:  BSizes.spaceBtwItems,),
               const BCirclarIcon(icon: Iconsax.add,
-              backgroundColor: TColors.black,
+              backgroundColor: BColors.black,
               width: 40,
               height: 40,
-              color: TColors.white,
+              color: BColors.white,
               ),
 
             ],
@@ -46,9 +46,9 @@ class BBottomAddToCart extends StatelessWidget {
           ElevatedButton(
             onPressed: (){},
             style: ElevatedButton.styleFrom(
-              padding: const EdgeInsets.all(TSizes.md),
-              backgroundColor: TColors.black,
-              side: const BorderSide(color: TColors.black)
+              padding: const EdgeInsets.all(BSizes.md),
+              backgroundColor: BColors.black,
+              side: const BorderSide(color: BColors.black)
             ),
            child: const Text('Add to cart'))
         ],

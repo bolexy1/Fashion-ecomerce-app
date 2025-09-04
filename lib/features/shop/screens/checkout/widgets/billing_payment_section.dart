@@ -15,17 +15,17 @@ class BBillingPaymentSection extends StatelessWidget {
     return  Column(
       children: [
         BSectionHeading(title: 'Payment Method', buttonTitle: 'Change', onPressed: (){},),
-        const SizedBox(height: TSizes.spaceBtwItems/2),
+        const SizedBox(height: BSizes.spaceBtwItems/2),
          Row(
           children: [
             BRoundedContainer(
               width: 60,
               height: 35,
-              backgroundColor: dark ? TColors.light : TColors.white,
-              padding: const EdgeInsets.all(TSizes.sm),
+              backgroundColor: dark ? BColors.light : BColors.white,
+              padding: const EdgeInsets.all(BSizes.sm),
               child: const Image(image: AssetImage(TImages.paypal), fit: BoxFit.contain,),
             ),
-            const SizedBox(width: TSizes.spaceBtwItems/2),
+            const SizedBox(width: BSizes.spaceBtwItems/2),
             Text('Paypal', style: Theme.of(context).textTheme.bodyLarge,),
             
           ],

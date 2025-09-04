@@ -23,7 +23,7 @@ class UserReviewCard extends StatelessWidget {
                 const CircleAvatar(
                   backgroundImage: AssetImage(TImages.userProfileImage1),
                 ),
-                   const SizedBox(width: TSizes.spaceBtwItems,),
+                   const SizedBox(width: BSizes.spaceBtwItems,),
                    Text('Promise Bolu', style: Theme.of(context).textTheme.titleLarge,)
               ],
             ),
@@ -31,33 +31,33 @@ class UserReviewCard extends StatelessWidget {
          
           ],
         ),
-        const SizedBox(width: TSizes.spaceBtwItems,),
+        const SizedBox(width: BSizes.spaceBtwItems,),
 
         // review
         Row(
           children: [
             const BRatingBarIndicator(rating: 4),
-            const SizedBox(width: TSizes.spaceBtwItems,),
+            const SizedBox(width: BSizes.spaceBtwItems,),
             Text('02 Sept, 2025', style: Theme.of(context).textTheme.bodyMedium)
           ],
         ),
-        const SizedBox(width: TSizes.spaceBtwItems,),
+        const SizedBox(width: BSizes.spaceBtwItems,),
         const ReadMoreText(
           'The user interface of the app is really friendly and beautiful, I was able to navigate and make purchases seamlessly, I must say you guys did a great job',
           trimLines: 2,
           trimMode: TrimMode.Line,
           trimExpandedText: ' show less',
           trimCollapsedText: ' Show more',
-          moreStyle:  TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: TColors.primary),
-          lessStyle:  TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: TColors.primary,),),
-          const SizedBox(height: TSizes.spaceBtwItems,),
+          moreStyle:  TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: BColors.primary),
+          lessStyle:  TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: BColors.primary,),),
+          const SizedBox(height: BSizes.spaceBtwItems,),
 
           // company review
 
           BRoundedContainer(
-            backgroundColor: dark ? TColors.darkerGrey : TColors.grey,
+            backgroundColor: dark ? BColors.darkerGrey : BColors.grey,
             child: Padding(
-              padding: EdgeInsets.all(TSizes.md),
+              padding: EdgeInsets.all(BSizes.md),
               child: Column(
                 children: [
                    Row(
@@ -67,20 +67,20 @@ class UserReviewCard extends StatelessWidget {
                       Text('02 Sept, 2025', style: Theme.of(context).textTheme.bodyMedium)
                       ],
                    ),
-                   const SizedBox(width: TSizes.spaceBtwItems,),
+                   const SizedBox(width: BSizes.spaceBtwItems,),
         const ReadMoreText(
           'The user interface of the app is really friendly and beautiful, I was able to navigate and make purchases seamlessly, I must say you guys did a great job',
           trimLines: 2,
           trimMode: TrimMode.Line,
           trimExpandedText: ' show less',
           trimCollapsedText: ' Show more',
-          moreStyle:  TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: TColors.primary),
-          lessStyle:  TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: TColors.primary,),),
+          moreStyle:  TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: BColors.primary),
+          lessStyle:  TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: BColors.primary,),),
                 ],
               ) ,),
               
           ),
-          const SizedBox(height: TSizes.spaceBtwSections,)
+          const SizedBox(height: BSizes.spaceBtwSections,)
           
       ],
     );

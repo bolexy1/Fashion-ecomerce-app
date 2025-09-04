@@ -29,24 +29,24 @@ class Home extends StatelessWidget {
                 children:  [
                   // appbar
                   BHomeAppBar(),
-                 SizedBox(height: TSizes.spaceBtwSections,),
+                 SizedBox(height: BSizes.spaceBtwSections,),
 
                   // searchbar
                    BSearchContainer(text: 'Search in store', ),
-                   SizedBox(height: TSizes.spaceBtwSections,),
+                   SizedBox(height: BSizes.spaceBtwSections,),
 
                   // cartegories 
                   Padding(padding: 
-                  EdgeInsetsGeometry.only(left: TSizes.defaultSpace),
+                  EdgeInsetsGeometry.only(left: BSizes.defaultSpace),
                   child: Column( 
                     children: [
-                      BSectionHeading(title: 'Porpular cartegories', showActionButton: false, textColor: TColors.white,),
-                      SizedBox(height: TSizes.spaceBtwItems,),
+                      BSectionHeading(title: 'Porpular cartegories', showActionButton: false, textColor: BColors.white,),
+                      SizedBox(height: BSizes.spaceBtwItems,),
 
                       // categories
                       BHomeCategories()
                   ],),),
-                   SizedBox(height: TSizes.spaceBtwSections,)
+                   SizedBox(height: BSizes.spaceBtwSections,)
 
 
                 ],
@@ -54,15 +54,15 @@ class Home extends StatelessWidget {
               Column(
                 children: [
                  const Padding(
-                    padding:  EdgeInsets.all(TSizes.defaultSpace),
+                    padding:  EdgeInsets.all(BSizes.defaultSpace),
                     child: BPromoSlider(banners: [TImages.promoBanner1,TImages.promoBanner2,TImages.promoBanner3],)
                   ),
-                 const SizedBox(height: TSizes.spaceBtwSections,),
+                 const SizedBox(height: BSizes.spaceBtwSections,),
 
                 //  heading
 
                    BSectionHeading(title: "Popular Product", onPressed: ()=>Get.to(()=>const AllProducts()),),
-                  const SizedBox(height: TSizes.spaceBtwItems,),
+                  const SizedBox(height: BSizes.spaceBtwItems,),
 
 
                   // popular products

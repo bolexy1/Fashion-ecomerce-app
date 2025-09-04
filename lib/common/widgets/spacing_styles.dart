@@ -4,10 +4,10 @@ import 'package:t_store/utils/constants/sizes.dart';
 
 class TSpacingStyles {
   static const EdgeInsetsGeometry paddingwithAppbarHeight =EdgeInsets.only(
-    top: TSizes.appBarHeight,
-    left: TSizes.defaultSpace,
-    bottom: TSizes.defaultSpace,
-    right: TSizes.defaultSpace
+    top: BSizes.appBarHeight,
+    left: BSizes.defaultSpace,
+    bottom: BSizes.defaultSpace,
+    right: BSizes.defaultSpace
 
   );
 }

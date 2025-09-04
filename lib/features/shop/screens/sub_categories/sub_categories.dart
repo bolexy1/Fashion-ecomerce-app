@@ -18,26 +18,26 @@ class SubCategoriesScreen extends StatelessWidget {
       appBar: const BAppbar(title: Text('Sports Shirts'), showBackArrow: true,),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(TSizes.defaultSpace),
+          padding: const EdgeInsets.all(BSizes.defaultSpace),
           child: Column(
             children: [
               // Banner
               const BRoundedImage(width: double.infinity, image: TImages.banner3, applyImageRadius: true,),
-              const SizedBox(height: TSizes.spaceBtwSections,),
+              const SizedBox(height: BSizes.spaceBtwSections,),
 
               // sub-categories
               Column(
                 children: [
                   // heading
                   BSectionHeading(title: 'Sports Shirts', onPressed: (){}),
-                  const SizedBox(height: TSizes.spaceBtwItems/2,),
+                  const SizedBox(height: BSizes.spaceBtwItems/2,),
 
                   SizedBox(
                     height: 120,
                     child: ListView.separated(
                       itemCount: 4,
                       scrollDirection: Axis.horizontal,
-                      separatorBuilder: (context,index)=> const SizedBox(width: TSizes.spaceBtwItems,),
+                      separatorBuilder: (context,index)=> const SizedBox(width: BSizes.spaceBtwItems,),
                       itemBuilder:(context, index) => const BProductCarHorizontal()),
                   ),
                 ],

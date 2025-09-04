@@ -27,7 +27,7 @@ class ProductDetail extends StatelessWidget {
            const BProductsImageSlider(),
             // product details
             Padding(
-              padding: const EdgeInsets.only(right: TSizes.defaultSpace, left: TSizes.defaultSpace, bottom: TSizes.defaultSpace),
+              padding: const EdgeInsets.only(right: BSizes.defaultSpace, left: BSizes.defaultSpace, bottom: BSizes.defaultSpace),
               child: Column(
                 children: [
                   //  Rating & share button
@@ -37,16 +37,16 @@ class ProductDetail extends StatelessWidget {
 
                   // attribute
                   const BProductAttributes(),
-                   const SizedBox(height: TSizes.spaceBtwSections,),
+                   const SizedBox(height: BSizes.spaceBtwSections,),
 
                   // checkout button
                  
                   SizedBox( width: double.maxFinite, child:  ElevatedButton(onPressed: (){}, child: const Text('Checkout'))),
-                  const SizedBox(height: TSizes.spaceBtwSections,),
+                  const SizedBox(height: BSizes.spaceBtwSections,),
 
                   // description
                    const BSectionHeading(title: 'Description', showActionButton: false,),
-                  const SizedBox(height: TSizes.spaceBtwItems,),
+                  const SizedBox(height: BSizes.spaceBtwItems,),
                  const ReadMoreText(
                     'This is a Product description for Blue nike Shoes for sport cartegories, they are more things that you can add but lets just leave it at the shoes we have more color options for you as well',
                     trimLines: 2,
@@ -59,7 +59,7 @@ class ProductDetail extends StatelessWidget {
 
                   // reviews
                   const Divider(),
-                  const SizedBox(height: TSizes.spaceBtwItems,),
+                  const SizedBox(height: BSizes.spaceBtwItems,),
                    Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                      children: [
@@ -67,7 +67,7 @@ class ProductDetail extends StatelessWidget {
                        IconButton(onPressed: ()=>Get.to(()=> const ProductReviewsScreen()), icon: const Icon(Iconsax.arrow_right_3, size: 18,))
                      ],
                    ),
-                  const SizedBox(height: TSizes.spaceBtwSections,),
+                  const SizedBox(height: BSizes.spaceBtwSections,),
                   
                  
 

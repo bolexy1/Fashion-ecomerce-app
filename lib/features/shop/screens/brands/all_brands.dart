@@ -4,7 +4,6 @@ import 'package:get/get_core/src/get_main.dart';
 import 'package:t_store/common/widgets/appbar/appbar.dart';
 import 'package:t_store/common/widgets/brands/brand_card.dart';
 import 'package:t_store/common/widgets/layout/grid_layout.dart';
-import 'package:t_store/common/widgets/products/sortable/sortable_products.dart';
 import 'package:t_store/common/widgets/text/section_heading.dart';
 import 'package:t_store/features/shop/screens/brands/brand_products.dart';
 import 'package:t_store/utils/constants/sizes.dart';
@@ -21,12 +20,12 @@ class AllBrandsScreen extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(TSizes.defaultSpace),
+          padding: const EdgeInsets.all(BSizes.defaultSpace),
           child: Column(
             children: [
               // heading
               const BSectionHeading(title: 'Brands', showActionButton: false,),
-              const SizedBox(height: TSizes.spaceBtwItems,),
+              const SizedBox(height: BSizes.spaceBtwItems,),
 
               // brand
               BGridLayout(

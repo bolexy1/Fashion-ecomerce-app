@@ -19,9 +19,9 @@ class BUserProfileTile extends StatelessWidget {
         padding: 0,
         image: TImages.user,                    
         ),
-        title: Text('Coding for me',style: Theme.of(context).textTheme.headlineSmall!.apply(color: TColors.white),),
-        subtitle:  Text('Bolexy1@gmail.com',style: Theme.of(context).textTheme.bodyMedium!.apply(color: TColors.white),),
-        trailing: IconButton(onPressed: onPressed, icon: const Icon(Iconsax.edit, color: TColors.white,)),
+        title: Text('Coding for me',style: Theme.of(context).textTheme.headlineSmall!.apply(color: BColors.white),),
+        subtitle:  Text('Bolexy1@gmail.com',style: Theme.of(context).textTheme.bodyMedium!.apply(color: BColors.white),),
+        trailing: IconButton(onPressed: onPressed, icon: const Icon(Iconsax.edit, color: BColors.white,)),
     );
   }
 }

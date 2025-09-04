@@ -24,11 +24,11 @@ class BCartItem extends StatelessWidget {
         BRoundedImage(
           width: 60,
           height: 60,
-          padding: const EdgeInsets.all(TSizes.sm),
-          backgroundColor: dark? TColors.darkerGrey:TColors.light ,
+          padding: const EdgeInsets.all(BSizes.sm),
+          backgroundColor: dark? BColors.darkerGrey:BColors.light ,
           image: TImages.productImage1,
           ),
-          const SizedBox(width: TSizes.spaceBtwItems,),
+          const SizedBox(width: BSizes.spaceBtwItems,),
     
           // title price and size
     

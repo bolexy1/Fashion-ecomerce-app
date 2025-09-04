@@ -4,7 +4,7 @@ import 'package:t_store/utils/constants/sizes.dart';
 
 class BRoundedImage extends StatelessWidget {
   const BRoundedImage({
-    super.key, required this.image, this.width , this.height,  this.applyImageRadius = true, this.border,  this.backgroundColor, this.fit = BoxFit.contain, this.padding,  this.isNetworkImage = false,  this.onPressed,  this.borderRadius = TSizes.md,
+    super.key, required this.image, this.width , this.height,  this.applyImageRadius = true, this.border,  this.backgroundColor, this.fit = BoxFit.contain, this.padding,  this.isNetworkImage = false,  this.onPressed,  this.borderRadius = BSizes.md,
   });
 
   final String image;

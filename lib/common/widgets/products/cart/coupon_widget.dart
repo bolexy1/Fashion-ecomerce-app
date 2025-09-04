@@ -16,8 +16,8 @@ class BCouponCode extends StatelessWidget {
     final dark = BHelperFunctions.isDarkMode(context);
     return BRoundedContainer(
       showBorder: true,
-      backgroundColor: dark ? TColors.dark : Colors.white,
-      padding: const EdgeInsets.only(top:TSizes.sm, bottom: TSizes.sm, right: TSizes.sm, left: TSizes.md),
+      backgroundColor: dark ? BColors.dark : Colors.white,
+      padding: const EdgeInsets.only(top:BSizes.sm, bottom: BSizes.sm, right: BSizes.sm, left: BSizes.md),
       child: Row(
         children: [
           // TextField
@@ -38,7 +38,7 @@ class BCouponCode extends StatelessWidget {
           child: ElevatedButton(
             onPressed: (){},
             style: ElevatedButton.styleFrom(
-              foregroundColor: dark ? TColors.white.withOpacity(0.5): TColors.dark.withOpacity(0.5),
+              foregroundColor: dark ? BColors.white.withOpacity(0.5): BColors.dark.withOpacity(0.5),
               backgroundColor: Colors.grey.withOpacity(0.2),
               side: BorderSide(color: Colors.grey.withOpacity(0.1)),
               

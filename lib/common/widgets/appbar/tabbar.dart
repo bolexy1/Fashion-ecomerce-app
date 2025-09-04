@@ -13,13 +13,13 @@ final List<Widget> tabs;
   Widget build(BuildContext context) {
     final dark =BHelperFunctions.isDarkMode(context);
     return Material(
-      color: dark ? TColors.black : TColors.white,
+      color: dark ? BColors.black : BColors.white,
       child: TabBar(
         tabs: tabs,
         isScrollable: true,
-        indicatorColor: TColors.primary,
-        labelColor: dark ? TColors.white: TColors.primary,
-        unselectedLabelColor: TColors.darkGrey,),
+        indicatorColor: BColors.primary,
+        labelColor: dark ? BColors.white: BColors.primary,
+        unselectedLabelColor: BColors.darkGrey,),
     );
   }
   

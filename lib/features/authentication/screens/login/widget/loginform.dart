@@ -15,7 +15,7 @@ class LoginForm extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Form(child: Padding(
-      padding: const EdgeInsets.symmetric(vertical: TSizes.spaceBtwSections),
+      padding: const EdgeInsets.symmetric(vertical: BSizes.spaceBtwSections),
       child: Column(
         children: [
           TextFormField(
@@ -23,13 +23,13 @@ class LoginForm extends StatelessWidget {
               prefixIcon: Icon(Iconsax.direct_right), labelText: TTexts.email,  
             ) ,
           ),
-          const SizedBox(height: TSizes.spaceBtwInputFields,),
+          const SizedBox(height: BSizes.spaceBtwInputFields,),
           TextFormField(
             decoration:const InputDecoration(
               prefixIcon: Icon(Iconsax.password_check), labelText: TTexts.password, suffixIcon: Icon(Iconsax.eye_slash) 
             ) ,
           ),
-           const SizedBox(height: TSizes.spaceBtwInputFields/2,),
+           const SizedBox(height: BSizes.spaceBtwInputFields/2,),
       
           //  remember me and forget password
           Row(
@@ -45,10 +45,10 @@ class LoginForm extends StatelessWidget {
               TextButton(onPressed: () => Get.to(()=> const ForgetPassword()), child: const Text(TTexts.forgetPassword),)
             ],
           ),
-          const SizedBox(height: TSizes.spaceBtwSections),
+          const SizedBox(height: BSizes.spaceBtwSections),
           // sign in button
           SizedBox(width:double.infinity, child: ElevatedButton(onPressed: ()=>Get.to(()=> const NavigationMenu()), child: const Text(TTexts.signIn),)),
-          const SizedBox(height: TSizes.spaceBtwItems),
+          const SizedBox(height: BSizes.spaceBtwItems),
       
           // create Account button
           SizedBox(width:double.infinity, child: OutlinedButton(onPressed: ()=>Get.to(()=> const SingupScreen()), child: const Text(TTexts.createAccount),)),

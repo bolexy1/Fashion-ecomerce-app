@@ -5,7 +5,7 @@ import 'package:t_store/utils/helpers/helper_functions.dart';
 
 class BCirclarIcon extends StatelessWidget {
   const BCirclarIcon({
-    super.key,  this.width,  this.height,  this.size = TSizes.lg, required this.icon,  this.color, this.backgroundColor,  this.onPressed,
+    super.key,  this.width,  this.height,  this.size = BSizes.lg, required this.icon,  this.color, this.backgroundColor,  this.onPressed,
   
   });
 
@@ -23,7 +23,7 @@ class BCirclarIcon extends StatelessWidget {
       height: height,
 
       decoration: BoxDecoration(
-        color: backgroundColor!= null? backgroundColor!: BHelperFunctions.isDarkMode(context) ? TColors.black.withOpacity(0.9):TColors.white.withOpacity(0.9),
+        color: backgroundColor!= null? backgroundColor!: BHelperFunctions.isDarkMode(context) ? BColors.black.withOpacity(0.9):BColors.white.withOpacity(0.9),
         borderRadius: BorderRadius.circular(100)
     
       ),
