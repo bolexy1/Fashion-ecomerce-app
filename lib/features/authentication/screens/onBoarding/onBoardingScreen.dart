@@ -42,7 +42,7 @@ class Onboardingscreen extends StatelessWidget {
 
           // Circular Button
 
-          onboardingNextBotton()
+          const onboardingNextBotton()
         ],
       ),
     );

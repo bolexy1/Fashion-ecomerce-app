@@ -26,7 +26,7 @@ class BHorizontalimageText extends StatelessWidget {
               height: 56,
               padding: const EdgeInsets.all(TSizes.sm),
               decoration: BoxDecoration(
-                color: backgroundColor ?? (dark?TColors.black : TColors.white),
+                color: backgroundColor ?? (dark? TColors.white:TColors.black ),
                 borderRadius: BorderRadius.circular(100)
               ),
               child:  Center(

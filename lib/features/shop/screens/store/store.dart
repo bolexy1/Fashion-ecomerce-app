@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:t_store/common/widgets/appbar/appbar.dart';
 import 'package:t_store/common/widgets/appbar/tabbar.dart';
 import 'package:t_store/common/widgets/brands/brand_card.dart';
@@ -6,6 +8,7 @@ import 'package:t_store/common/widgets/custom_shapes/container/search_container.
 import 'package:t_store/common/widgets/layout/grid_layout.dart';
 import 'package:t_store/common/widgets/products/cart/cart_menu_icon.dart';
 import 'package:t_store/common/widgets/text/section_heading.dart';
+import 'package:t_store/features/shop/screens/brands/all_brands.dart';
 import 'package:t_store/features/shop/screens/store/widget/category_tab.dart';
 import 'package:t_store/utils/constants/colors.dart';
 import 'package:t_store/utils/constants/sizes.dart';
@@ -48,7 +51,7 @@ class Store extends StatelessWidget {
                   const SizedBox(height: TSizes.spaceBtwSections,),
       
                   // feature brands
-                  BSectionHeading(title: "Featured Brands",  onPressed: (){},),
+                  BSectionHeading(title: "Featured Brands",  onPressed: ()=> Get.to(()=> const AllBrandsScreen()),),
                   const SizedBox(height: TSizes.spaceBtwItems/1.5,),
       
                   BGridLayout(itemCount: 4 ,mainAxisExtent:80 , itemBuilder: (_, index){

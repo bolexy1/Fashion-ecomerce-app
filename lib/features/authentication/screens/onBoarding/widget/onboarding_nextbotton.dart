@@ -19,6 +19,6 @@ class onboardingNextBotton extends StatelessWidget {
       right: TSizes.defaultSpace,
       child: ElevatedButton(onPressed: ()=> OnboardingController.instance.nextPage(),
       style: ElevatedButton.styleFrom(shape: const CircleBorder(), backgroundColor:dark?  TColors.primary: Colors.black  ),
-       child: Icon(Iconsax.arrow_right_1)),);
+       child: const Icon(Iconsax.arrow_right_1)),);
   }
 }

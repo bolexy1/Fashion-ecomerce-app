@@ -22,9 +22,9 @@ class TCircularContainer extends StatelessWidget {
     width: width,
     height: height,
     margin: margin,
-    padding: EdgeInsets.all(padding!),
+    padding: EdgeInsets.all(padding),
     decoration: BoxDecoration(
-      borderRadius: BorderRadius.circular(radius!),
+      borderRadius: BorderRadius.circular(radius),
       color: backgroundColor,
       border: showBorder ? Border.all(color: borderColor): null,
     ),

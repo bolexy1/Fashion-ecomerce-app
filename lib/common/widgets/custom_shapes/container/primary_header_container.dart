@@ -17,9 +17,7 @@ class BPrimaryHeaderContainer extends StatelessWidget {
         color: TColors.primary,
         padding: const EdgeInsets.all(0),
           //   if [size.isfinite: is not true.in stock] error occurred -> read README.nd file at [DESIGNN ERRORS] # 1
-    child: SizedBox(
-      height: 400,
-      child: Stack(
+    child: Stack(
       children: [       
       
         // background custom shapes
@@ -37,8 +35,6 @@ class BPrimaryHeaderContainer extends StatelessWidget {
       ],
                 ),
     ),
-            ),
-          )
-    ;
+            );
   }
 }

@@ -1,10 +1,13 @@
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:t_store/common/widgets/custom_shapes/container/primary_header_container.dart';
 import 'package:t_store/common/widgets/custom_shapes/container/search_container.dart';
 import 'package:t_store/common/widgets/layout/grid_layout.dart';
 import 'package:t_store/common/widgets/products/productscart/product_card_vertical.dart';
 import 'package:t_store/common/widgets/text/section_heading.dart';
+import 'package:t_store/features/shop/screens/all_products/all_products.dart';
 import 'package:t_store/features/shop/screens/home/widget/home_appbar.dart';
 import 'package:t_store/features/shop/screens/home/widget/home_categories.dart';
 import 'package:t_store/features/shop/screens/home/widget/promo_slider.dart';
@@ -30,6 +33,7 @@ class Home extends StatelessWidget {
 
                   // searchbar
                    BSearchContainer(text: 'Search in store', ),
+                   SizedBox(height: TSizes.spaceBtwSections,),
 
                   // cartegories 
                   Padding(padding: 
@@ -41,7 +45,8 @@ class Home extends StatelessWidget {
 
                       // categories
                       BHomeCategories()
-                  ],),)
+                  ],),),
+                   SizedBox(height: TSizes.spaceBtwSections,)
 
 
                 ],
@@ -56,7 +61,7 @@ class Home extends StatelessWidget {
 
                 //  heading
 
-                   BSectionHeading(title: "Popular Product", onPressed: (){},),
+                   BSectionHeading(title: "Popular Product", onPressed: ()=>Get.to(()=>const AllProducts()),),
                   const SizedBox(height: TSizes.spaceBtwItems,),
 
 

@@ -3,7 +3,6 @@ import 'package:iconsax/iconsax.dart';
 import 'package:t_store/features/authentication/screens/password_configuration/reset_password.dart';
 import 'package:t_store/utils/constants/sizes.dart';
 import 'package:t_store/utils/constants/text_strings.dart';
-import 'package:t_store/utils/helpers/helper_functions.dart';
 import 'package:get/get.dart';
 
 class ForgetPassword extends StatelessWidget {

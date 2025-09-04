@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:t_store/features/authentication/screens/onBoarding/onBoardingScreen.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'package:t_store/utils/constants/text_strings.dart';
 import 'package:t_store/utils/theme/theme.dart';
 
@@ -18,7 +17,7 @@ class App extends StatelessWidget {
       theme: TAppTheme.lightTheme,
       darkTheme: TAppTheme.darkTheme,
       debugShowCheckedModeBanner: false,
-      home: Onboardingscreen(),
+      home: const Onboardingscreen(),
       // Scaffold(
       //   body: Center(
       //     child: Padding(

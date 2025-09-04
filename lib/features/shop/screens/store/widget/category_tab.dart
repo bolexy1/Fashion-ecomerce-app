@@ -29,8 +29,9 @@ class BCategoryTab extends StatelessWidget {
       
                   BGridLayout(itemCount: 4, itemBuilder: (_, index)=>const BProductCardVertical())
                 ],
-              ),),]
+              ),
+              ),
+              ]
     );
-           ;
   }
 }

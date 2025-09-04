@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
 import 'package:t_store/common/widgets/success_screen/success_screen.dart';
 import 'package:t_store/features/authentication/screens/login/login.dart';
 import 'package:t_store/utils/constants/image_strings.dart';
@@ -45,9 +44,9 @@ class VerifyEmail extends StatelessWidget {
                 images: TImages.deliveredEmailIllustration,
                title: TTexts.yourAccountCreatedTitle, 
                subtitle: TTexts.yourAccountCreatedSubTitle,
-                onPressed: () => Get.to(()=> const LoginScreen()))), child: Text(TTexts.tContinue))),
+                onPressed: () => Get.to(()=> const LoginScreen()))), child: const Text(TTexts.tContinue))),
               const SizedBox(height: TSizes.spaceBtwItems,),
-              SizedBox(width: double.infinity, child: TextButton(onPressed: (){}, child: Text(TTexts.resendEmail)),),
+              SizedBox(width: double.infinity, child: TextButton(onPressed: (){}, child: const Text(TTexts.resendEmail)),),
 
             ],
           ),),
