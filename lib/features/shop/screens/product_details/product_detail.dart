@@ -19,7 +19,7 @@ class ProductDetail extends StatelessWidget {
     
     return  Scaffold(
 
-      bottomNavigationBar: BBottomAddToCart(),
+      bottomNavigationBar: const BBottomAddToCart(),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -53,8 +53,8 @@ class ProductDetail extends StatelessWidget {
                     trimMode: TrimMode.Line,
                     trimCollapsedText: ' show more',
                     trimExpandedText: ' less',
-                    moreStyle: const TextStyle(fontSize: 14, fontWeight: FontWeight.w800),
-                    lessStyle: const TextStyle(fontSize: 14, fontWeight: FontWeight.w800),
+                    moreStyle: TextStyle(fontSize: 14, fontWeight: FontWeight.w800),
+                    lessStyle: TextStyle(fontSize: 14, fontWeight: FontWeight.w800),
                   ),
 
                   // reviews

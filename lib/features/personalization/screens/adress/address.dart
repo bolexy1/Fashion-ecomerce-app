@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/get_core.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:t_store/common/widgets/appbar/appbar.dart';
-import 'package:t_store/common/widgets/custom_shapes/container/rounded_container.dart';
 import 'package:t_store/features/personalization/screens/adress/add_new_address.dart';
 import 'package:t_store/features/personalization/screens/adress/widgets/single_address.dart';
 import 'package:t_store/utils/constants/colors.dart';

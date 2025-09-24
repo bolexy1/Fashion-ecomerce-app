@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:get/utils.dart';
 import 'package:t_store/common/widgets/appbar/appbar.dart';
 import 'package:t_store/common/widgets/images/rounded_images.dart';
 import 'package:t_store/common/widgets/products/productscart/product_car_horizontal.dart';
 import 'package:t_store/common/widgets/text/section_heading.dart';
-import 'package:t_store/features/shop/screens/brands/all_brands.dart';
 import 'package:t_store/utils/constants/image_strings.dart';
 import 'package:t_store/utils/constants/sizes.dart';
 
@@ -22,7 +19,7 @@ class SubCategoriesScreen extends StatelessWidget {
           child: Column(
             children: [
               // Banner
-              const BRoundedImage(width: double.infinity, image: TImages.banner3, applyImageRadius: true,),
+              const BRoundedImage(width: double.infinity, image: BImages.banner3, applyImageRadius: true,),
               const SizedBox(height: BSizes.spaceBtwSections,),
 
               // sub-categories

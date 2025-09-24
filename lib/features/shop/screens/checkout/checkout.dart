@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:t_store/common/widgets/appbar/appbar.dart';
 import 'package:t_store/common/widgets/custom_shapes/container/rounded_container.dart';
 import 'package:t_store/common/widgets/products/cart/coupon_widget.dart';
@@ -48,18 +47,18 @@ class CheckoutScreen extends StatelessWidget {
                     // pricing
                     BBillingAmounttSection(),
                     
-                     const SizedBox(height: BSizes.spaceBtwItems,),
+                     SizedBox(height: BSizes.spaceBtwItems,),
 
                     // divider
-                    const Divider(),
-                     const SizedBox(height: BSizes.spaceBtwItems),
+                    Divider(),
+                     SizedBox(height: BSizes.spaceBtwItems),
 
                     // Payment methods
                     BBillingPaymentSection(),
-                    const SizedBox(height: BSizes.spaceBtwItems),
+                    SizedBox(height: BSizes.spaceBtwItems),
                     // address
                     BBillingAddressSection(),
-                    const SizedBox(height: BSizes.spaceBtwItems),
+                    SizedBox(height: BSizes.spaceBtwItems),
                   ],
                 ),
               )
@@ -72,7 +71,7 @@ class CheckoutScreen extends StatelessWidget {
 
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.all(BSizes.defaultSpace ),
-        child: ElevatedButton(onPressed: ()=> Get.to(()=> SuccessScreen(images: TImages.successfulPaymentIcon, title: 'Payment Success', subtitle: 'Your item will be shipped soon', onPressed: () => Get.offAll(()=>const NavigationMenu()),)), 
+        child: ElevatedButton(onPressed: ()=> Get.to(()=> SuccessScreen(images: BImages.successfulPaymentIcon, title: 'Payment Success', subtitle: 'Your item will be shipped soon', onPressed: () => Get.offAll(()=>const NavigationMenu()),)), 
         child:const Text('Checkout \$256.0')),
       ),
     );

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:t_store/common/styles/shadows.dart';
 import 'package:t_store/common/widgets/custom_shapes/container/rounded_container.dart';
@@ -41,7 +40,7 @@ class BProductCardVertical extends StatelessWidget {
               child:  Stack(
                 children: [
                   // thumbnail image
-                  const BRoundedImage(image: TImages.productImage1, applyImageRadius: true,),
+                  const BRoundedImage(image: BImages.productImage1, applyImageRadius: true,),
       
                   // sale tag
       

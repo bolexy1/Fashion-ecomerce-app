@@ -21,7 +21,7 @@ class UserReviewCard extends StatelessWidget {
             Row(
               children: [
                 const CircleAvatar(
-                  backgroundImage: AssetImage(TImages.userProfileImage1),
+                  backgroundImage: AssetImage(BImages.userProfileImage1),
                 ),
                    const SizedBox(width: BSizes.spaceBtwItems,),
                    Text('Promise Bolu', style: Theme.of(context).textTheme.titleLarge,)
@@ -57,7 +57,7 @@ class UserReviewCard extends StatelessWidget {
           BRoundedContainer(
             backgroundColor: dark ? BColors.darkerGrey : BColors.grey,
             child: Padding(
-              padding: EdgeInsets.all(BSizes.md),
+              padding: const EdgeInsets.all(BSizes.md),
               child: Column(
                 children: [
                    Row(

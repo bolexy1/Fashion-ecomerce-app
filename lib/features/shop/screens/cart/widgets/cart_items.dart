@@ -13,7 +13,7 @@ class BCartItems extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.separated(
           shrinkWrap: true,
-          separatorBuilder: (_,__) => SizedBox(height: BSizes.spaceBtwSections,),
+          separatorBuilder: (_,__) => const SizedBox(height: BSizes.spaceBtwSections,),
            itemCount: 2,
             itemBuilder: (_, index)
             =>  Column(

@@ -17,7 +17,7 @@ class BUserProfileTile extends StatelessWidget {
         width: 50,
         height: 50,
         padding: 0,
-        image: TImages.user,                    
+        image: BImages.user,                    
         ),
         title: Text('Coding for me',style: Theme.of(context).textTheme.headlineSmall!.apply(color: BColors.white),),
         subtitle:  Text('Bolexy1@gmail.com',style: Theme.of(context).textTheme.bodyMedium!.apply(color: BColors.white),),

@@ -60,7 +60,7 @@ class BProductMetaData extends StatelessWidget {
        Row(
          children: [
           BCircularImage(
-            image: TImages.cosmeticsIcon,
+            image: BImages.cosmeticsIcon,
             width: 32,
             height: 32,
             overlayColor: dark ? BColors.white : BColors.black,),

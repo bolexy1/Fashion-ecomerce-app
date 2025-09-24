@@ -44,7 +44,7 @@ class BSizes {
   static const double dividerHeight = 1.0;
 
   // Product item dimensions
-  static const double productImageSize = 120.0;
+  static const double producBImagesize = 120.0;
   static const double productImageRadius = 16.0;
   static const double productItemHeight = 160.0;
 

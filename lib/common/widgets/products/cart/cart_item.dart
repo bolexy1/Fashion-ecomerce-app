@@ -26,7 +26,7 @@ class BCartItem extends StatelessWidget {
           height: 60,
           padding: const EdgeInsets.all(BSizes.sm),
           backgroundColor: dark? BColors.darkerGrey:BColors.light ,
-          image: TImages.productImage1,
+          image: BImages.productImage1,
           ),
           const SizedBox(width: BSizes.spaceBtwItems,),
     

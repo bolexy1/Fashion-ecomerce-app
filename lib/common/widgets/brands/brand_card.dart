@@ -30,7 +30,7 @@ class BBrandCard extends StatelessWidget {
         children: [
           // icon
           Flexible(
-            child: BCircularImage(image: TImages.clothIcon,backgroundColor: Colors.transparent, isNetworkImage: false, overlayColor: isDark ? BColors.white:BColors.black,
+            child: BCircularImage(image: BImages.clothIcon,backgroundColor: Colors.transparent, isNetworkImage: false, overlayColor: isDark ? BColors.white:BColors.black,
             
             ),
           ),

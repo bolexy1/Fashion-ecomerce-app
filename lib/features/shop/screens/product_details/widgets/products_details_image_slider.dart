@@ -28,8 +28,8 @@ class BProductsImageSlider extends StatelessWidget {
             // image 
           const SizedBox(height: 400, 
           child: Padding(
-            padding: const EdgeInsets.all(BSizes.productImageRadius *2),
-            child: Center(child: Image(image: AssetImage(TImages.productImage1))),
+            padding: EdgeInsets.all(BSizes.productImageRadius *2),
+            child: Center(child: Image(image: AssetImage(BImages.productImage1))),
           )
           ),
     
@@ -52,7 +52,7 @@ class BProductsImageSlider extends StatelessWidget {
                 backgroundColor: isDark ? BColors.dark : BColors.white,   
                 border: Border.all(color: BColors.primary), 
                 padding: const EdgeInsets.all(BSizes.sm),       
-                image: TImages.productImage3) ,),
+                image: BImages.productImage3) ,),
             ),
           ),
     

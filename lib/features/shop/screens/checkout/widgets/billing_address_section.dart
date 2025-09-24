@@ -25,7 +25,7 @@ class BBillingAddressSection extends StatelessWidget {
           children: [
             const Icon(Icons.location_history, color: Colors.grey, size: 16,),
             const SizedBox(width: BSizes.spaceBtwItems,),
-            Text('Odk, Isebo Road, off Alakia, Ibadan, Oyo State.', style: Theme.of(context).textTheme.bodyMedium, softWrap: true,)
+            Text('Odk, Isebo Road, Ibadan.', style: Theme.of(context).textTheme.bodyMedium, softWrap: true,)
           ],
         ),
         const SizedBox(height: BSizes.spaceBtwItems/2),

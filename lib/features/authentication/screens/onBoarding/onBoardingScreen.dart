@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:t_store/features/authentication/controllers/onboarding_controller.dart';
+import 'package:t_store/features/authentication/controllers/onboarding/onboarding_controller.dart';
 import 'package:t_store/features/authentication/screens/onBoarding/widget/onboarding_dot_indicator.dart';
 import 'package:t_store/features/authentication/screens/onBoarding/widget/onboarding_nextbotton.dart';
 import 'package:t_store/features/authentication/screens/onBoarding/widget/onboarding_page.dart';
@@ -22,11 +22,11 @@ class Onboardingscreen extends StatelessWidget {
             controller: controller.pageController,
             onPageChanged: controller.updatePageIndicator,
             children:const  [
-              OnboardingPage(image: TImages.onBoardingImage1, subtitle: TTexts.onBoardingSubTitle1, title: TTexts.onBoardingTitle1,),
+              OnboardingPage(image: BImages.onBoardingImage1, subtitle: TTexts.onBoardingSubTitle1, title: TTexts.onBoardingTitle1,),
 
-              OnboardingPage(image: TImages.onBoardingImage2, subtitle: TTexts.onBoardingSubTitle2, title: TTexts.onBoardingTitle2,),
+              OnboardingPage(image: BImages.onBoardingImage2, subtitle: TTexts.onBoardingSubTitle2, title: TTexts.onBoardingTitle2,),
 
-              OnboardingPage(image: TImages.onBoardingImage3, subtitle: TTexts.onBoardingSubTitle3, title: TTexts.onBoardingTitle3,)
+              OnboardingPage(image: BImages.onBoardingImage3, subtitle: TTexts.onBoardingSubTitle3, title: TTexts.onBoardingTitle3,)
 
             ],
           ),

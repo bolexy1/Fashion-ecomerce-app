@@ -28,7 +28,7 @@ class ProfileScreen extends StatelessWidget {
               width: double.infinity,
               child: Column(
                 children: [
-                  const BCircularImage(image: TImages.user, width: 80, height: 80,),
+                  const BCircularImage(image: BImages.user, width: 80, height: 80,),
                   TextButton(onPressed: (){}, child:const Text('Change Profile Picture') )
                 ],
               ),

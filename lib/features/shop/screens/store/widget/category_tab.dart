@@ -19,8 +19,8 @@ class BCategoryTab extends StatelessWidget {
               child: Column(
                 children: [
                   // brands 
-                 const BBrandShowcase(image: [TImages.productImage3,TImages.productImage2,TImages.productImage1],),
-                 const BBrandShowcase(image: [TImages.productImage3,TImages.productImage2,TImages.productImage1],),
+                 const BBrandShowcase(image: [BImages.productImage3,BImages.productImage2,BImages.productImage1],),
+                 const BBrandShowcase(image: [BImages.productImage3,BImages.productImage2,BImages.productImage1],),
                  const SizedBox(height: BSizes.spaceBtwItems,),
       
                   // products

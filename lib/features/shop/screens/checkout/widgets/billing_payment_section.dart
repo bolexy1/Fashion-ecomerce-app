@@ -23,7 +23,7 @@ class BBillingPaymentSection extends StatelessWidget {
               height: 35,
               backgroundColor: dark ? BColors.light : BColors.white,
               padding: const EdgeInsets.all(BSizes.sm),
-              child: const Image(image: AssetImage(TImages.paypal), fit: BoxFit.contain,),
+              child: const Image(image: AssetImage(BImages.paypal), fit: BoxFit.contain,),
             ),
             const SizedBox(width: BSizes.spaceBtwItems/2),
             Text('Paypal', style: Theme.of(context).textTheme.bodyLarge,),

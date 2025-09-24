@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:t_store/common/styles/shadows.dart';
 import 'package:t_store/common/widgets/custom_shapes/container/rounded_container.dart';
 import 'package:t_store/common/widgets/icons/circular_icon.dart';
 import 'package:t_store/common/widgets/images/rounded_images.dart';
@@ -38,7 +37,7 @@ class BProductCarHorizontal extends StatelessWidget {
                   const SizedBox(
                     height: 120,
                     width: 120,
-                    child: BRoundedImage(image: TImages.productImage1, applyImageRadius: true,)
+                    child: BRoundedImage(image: BImages.productImage1, applyImageRadius: true,)
                     ),
 
                      Positioned(

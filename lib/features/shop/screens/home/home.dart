@@ -1,7 +1,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:t_store/common/widgets/custom_shapes/container/primary_header_container.dart';
 import 'package:t_store/common/widgets/custom_shapes/container/search_container.dart';
 import 'package:t_store/common/widgets/layout/grid_layout.dart';
@@ -40,7 +39,7 @@ class Home extends StatelessWidget {
                   EdgeInsetsGeometry.only(left: BSizes.defaultSpace),
                   child: Column( 
                     children: [
-                      BSectionHeading(title: 'Porpular cartegories', showActionButton: false, textColor: BColors.white,),
+                      BSectionHeading(title: 'Porpular categories', showActionButton: false, textColor: BColors.white,),
                       SizedBox(height: BSizes.spaceBtwItems,),
 
                       // categories
@@ -55,7 +54,7 @@ class Home extends StatelessWidget {
                 children: [
                  const Padding(
                     padding:  EdgeInsets.all(BSizes.defaultSpace),
-                    child: BPromoSlider(banners: [TImages.promoBanner1,TImages.promoBanner2,TImages.promoBanner3],)
+                    child: BPromoSlider(banners: [BImages.promoBanner1,BImages.promoBanner2,BImages.promoBanner3],)
                   ),
                  const SizedBox(height: BSizes.spaceBtwSections,),
 
